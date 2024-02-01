@@ -67,13 +67,31 @@ footer {
     margin-left: 20px;
     margin-right: 20px;
     border-top: solid 3px rgb(75, 73, 62);
-   border-bottom: solid 10px #383827;
-   border-left: solid 3px#3a3434;
-   border-right:solid 3px #413d3d;
-border-radius: 8px;
-padding: 10px 10px 10px 10px ;
+    border-bottom: solid 10px #383827;
+    border-left: solid 3px#3a3434;
+    border-right:solid 3px #413d3d;
+    border-radius: 8px;
+    padding: 10px 10px 10px 10px ;
+    gap: 10px;
+
   }
-  
+  .navbarlink  { display: flex;
+   flex-direction: row;
+    gap: 10px;
+    padding-left: 300px;
+    
+  }
+  .linkindex {   background-color: #cfc5af; 
+    text-decoration: none;
+    margin-left: 20px;
+    margin-right: 20px;
+    border-top: solid 3px rgb(75, 73, 62);
+    border-bottom: solid 10px #383827;
+    border-left: solid 3px#3a3434;
+    border-right:solid 3px #413d3d;
+    border-radius: 8px;
+
+  }
 
 a { color: rgb(155, 103, 5);
     font-size: 25px;
