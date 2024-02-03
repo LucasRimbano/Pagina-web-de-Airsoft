@@ -8,29 +8,66 @@ h1 {
 
 }
 
+.img-carrousel { max-width:100%;
+    max-height: 100%;
+    margin: 0px;
+    padding: 0px;
+object-fit: cover;
+}
 
+.container-index button:hover { background-color: #adada473; 
+
+   border: solid 5px #c4b77163; 
+ 
+
+}
+
+.card-body {  background-color: #e0d9cd;
+    border: solid 3px #414130e3;
+    border-radius: 3px ;
+    
+    
+ }
+
+ .card-title {  padding-left: 0px;
+    text-shadow: #5a4423;
+    border: solid 1px #2b2a2986;
+    margin-right: 300px; 
+    padding: 3px 10px;
+    padding-left: 35px;
+    border-radius: 5px;
+    justify-content: center; }
+
+
+ .card-body a:hover { font-size: 20px;
+     margin-left: 50px;
+     transition: 0.5s;
+     box-shadow: #3a3434 3px 2px 1px 3px ;
+
+ }   
 #volverpagprinc { text-align: center;
 
 }
 
-footer {
-    padding-top: 80px;
+footer {margin-bottom: 0px;
+   margin-top: 50px;
     
  }
 
 
-.footer { display: flexbox;
+.footer { 
     background-color:  #BBAB8C ; 
     align-items: center;
     text-align: center;
-   padding-top:  5px ; 
+   padding-top:  15px ; 
    padding-bottom: 5px;
-   padding-left: 5px;
+  
   
   }
 
+
 .titulo { margin-bottom: 25px; 
-    margin-top: 0; 
+    margin-top: 0px; 
      font-size: 50px;
     text-align: center;
     color:#fcf9ee;
@@ -40,27 +77,62 @@ footer {
     padding-bottom: 10px;
 
 }
-.titulo 
-
-#tituloMorfologia { 
-    font-size: 80px;
-    color:  #080808 ; 
-    background-color: #DED0B6;
-    text-align: center ; 
-    box-shadow: 5px 10px  1px  #F1D3B3 ;
-}
 
 
 
-.navbar { display: flex;
+
+
+.navbarindex {display: flex;
     gap: 30px;
-    background-color: #BBAB8C;
+    background-color: #cfc4a6d3;
     align-items: center;
     border-radius: 3px;
     padding-left: 200px;
     padding-top: 25px;
     padding-bottom: 25px;
+
 }
+
+.navbarlinkindex {background-color: #cfc5af; 
+    text-decoration: none;
+    margin-left: 20px;
+    margin-right: 20px;
+    border-top: solid 3px rgb(75, 73, 62);
+    border-bottom: solid 10px #383827;
+    border-left: solid 3px#3a3434;
+    border-right:solid 3px #413d3d;
+    border-radius: 8px;
+    padding: 10px 10px 10px 10px ;
+    gap: 10px;
+
+}
+
+@media (max-width:900px) { .navbarindex { background-color: #e9d981;
+    display: flex;
+    flex-direction: column;
+    margin: 0px 0px; 
+    padding: 10px 2px;
+font-size: 10px; }
+ .navbarlinkindex { padding: 5px 5px;
+margin: 0px;
+font-size: 15px;
+color: #5a4423;}
+  
+  }
+.navbar { display: flex;
+    gap: 30px;
+    background-color: #cfc4a6d3;
+    align-items: center;
+    border-radius: 3px;
+    padding-left: 200px;
+    padding-top: 25px;
+    padding-bottom: 25px;
+
+}
+
+
+    
+
 
 .navbarlink{ background-color: #cfc5af; 
     text-decoration: none;
@@ -75,23 +147,58 @@ footer {
     gap: 10px;
 
   }
+
   .navbarlink  { display: flex;
-   flex-direction: row;
-    gap: 10px;
-    padding-left: 300px;
-    
+    padding-left: 350px;
+    margin: 3px 300px;   
   }
+
+
+  .navbar-toggler:hover {
+   font-size: 30px;
+   border: solid 3px #e9d981;
+   border-radius: 3%; 
+   transition: 0.3s;
+   filter: contrast(65);
+   font-size: 33px;
+   
+}
   .linkindex {   background-color: #cfc5af; 
     text-decoration: none;
-    margin-left: 20px;
+    margin-bottom: 10px;
+    margin-left: 0px;
     margin-right: 20px;
     border-top: solid 3px rgb(75, 73, 62);
     border-bottom: solid 10px #383827;
     border-left: solid 3px#3a3434;
     border-right:solid 3px #413d3d;
-    border-radius: 8px;
+    border-radius: 8px; 
+    padding: 5px 3px;
 
   }
+  .linkindex:hover { background-color:  #ebd9bfa6;
+    font-size: 39px; 
+    color:#252420;
+    padding-left: 200px;
+    padding-right: 100px ;
+    margin-top: 7px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    transition: 0.7s;
+
+  }
+
+.navbarlink:hover { background-color:  #ebd9bfa6;
+    font-size: 39px; 
+  
+    color:#252420;
+   padding-left: 400px;
+   padding-right: 300px ;
+   margin-top: 7px;
+   font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+   transition: 0.7s;
+ 
+}
+
 
 a { color: rgb(155, 103, 5);
     font-size: 25px;
@@ -99,29 +206,15 @@ a { color: rgb(155, 103, 5);
 }
 
 
-
-body {
-    background-color: #fcf9ee;
-}
-
-
-.morfologiaCompleta { 
-text-align: center;
-color:#fcf9ee ;
-font-size: 60px;
-} 
-
    
 
- 
-body {
+
+body { padding: 0px 0px;
     background-image: url("https://wallpapers.com/images/featured/camo-b4jyfziypywrtbbz.jpg");
     background-size: 110%;
 }
 
-h3{ background-color: #F1D3B3;
-    font-size: 33px;
-}
+
 #textocomoseorigino { background-color: #F1D3B3;
       font-size: 33px;
 }
@@ -132,28 +225,18 @@ h3{ background-color: #F1D3B3;
     text-align: center ;
     
 }
+ 
+@media (max-width:1300px) { .navbar {display: flex;
+  margin: 0px 0px; 
+  padding: 10px 2px;
 
-.textopartidas {
-    background-color: #FAEED1;
-    box-shadow: 5px 10px  1px  #F1D3B3 ;
 }
+.navbarlink{display: flex;
+    margin: 0px 0px; 
+    padding: 10px 2px;
 
-#linkmapa {
-    font-size: 50px;
-    border-radius: 10px solid black ;
-    border-radius: 6px;
-    padding: 10px 15px;
-    box-sizing: border-box ;
-    margin-bottom: 15px;
-    text-align: center;
-    background-color: #464242bb;
-    color: #fcf9ee;
-    text-decoration: 3px overline;
-    align-self: start;
-    
+}    
 }
-/* estoy probando otro estilo al link del mapa*/
-
 
 #linkmapa {
     margin: 50px;
@@ -202,9 +285,6 @@ border-radius: 8px;
 padding: 10px 10px 10px 10px ;
 }
 
-
-     
-
 #textomapa { background-color: #FAEED1;
     font-size: 33px;
 }
@@ -217,20 +297,27 @@ padding: 10px 10px 10px 10px ;
 
 
 
-.grilla {
-    margin: 100px ; 
+.grilla { 
+    padding:  10px 100px ;
+    margin: 100px 0px ; 
     display: grid;
      font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
      grid-template-columns: 1fr 1fr 1fr 1fr;
      grid-template-rows: 1fr 200px ;
-     gap:  30px;
+     gap:  15px 5px;
      grid-template-areas: 
     ' a1 a2 a3 a4 '
 
     'a5 a6 a7 a8' 
-   ;
+   ;}
 
-} 
+@media (max-width:950px) {
+     .grilla { display: flex ;  
+    flex-direction: column;
+    gap: 10px;
+    align-items: stretch;
+    justify-content: flex-start;
+     }}
 
 
 .box { width: 400px;
@@ -241,6 +328,9 @@ align-items: center;
 display: flexbox;
 border-radius: 10px;
 }
+
+
+
 .box:hover {  
     background-color: #aca9a4c0;
     border: 5px solid #9b702aef ; 
@@ -300,22 +390,24 @@ padding-left: 10px;
 }
 
 
-.b5 .circulo { margin-top: 15px ;
+.b1 { order: 0;}
+.b5 .circulo { margin-top: 5px ;
     margin-left: 10px;
-    width: 50px;
-    height: 50px;
+    width: 35Px;
+    height: 35px;
     background-color: rgb(255, 255, 255);
     border-radius: 3px black;
     border-radius: 50%;
-    align-self: self-start;
+    align-self: start;
     align-items: center;
     position: absolute;
+    order: 5;
 }
 
-.b6 .circulo { margin-top: 15px ;
+.b6 .circulo { margin-top: 5px ;
     margin-left: 10px;
-    width: 50px;
-    height: 50px;
+    width: 35Px;
+    height: 35px;
     background-color: green;
     border-radius: 3px black;
     border-radius: 50%;
@@ -324,10 +416,10 @@ padding-left: 10px;
     position: absolute;
 }
 
-.b7 .circulo { margin-top: 15px ;
+.b7 .circulo {margin-top: 5px ;
     margin-left: 10px;
-    width: 50px;
-    height: 50px;
+    width: 35Px;
+    height: 35px;
     background-color: yellow;
     border-radius: 3px black;
     border-radius: 50%;
@@ -336,11 +428,12 @@ padding-left: 10px;
     position: absolute; 
 }
 
+
 .b8 .circulo { 
-    margin-top: 15px ;
+    margin-top: 5px ;
     margin-left: 10px;
-    width: 50px;
-    height: 50px;
+    width: 35Px;
+    height: 35px;
     background-color: red;
     border-radius: 3px black;
     border-radius: 50%;
@@ -359,8 +452,15 @@ gap: 0px;
 
 }
 
+@media (max-width:1250px)
+ {
+    .grilla-contacto { display: flex;
+    flex-direction: column;
+    padding-bottom: 20px;
+    gap: 3px;
 
-
+}
+ }
 
 
 .contacto { display: flexbox; 
@@ -425,20 +525,38 @@ form input ,textarea { width: 400px;
 }
 
 
-.grilla-mapa { margin-top: 80px;
+.grilla-mapa { padding-bottom: 30px;
+    padding-left: 30px;
+    padding-right: 30px;
+    margin-top: 0px;
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr ;
-    grid-template-rows: 1fr 1fr  ;
+    grid-template-columns: 1fr 1fr  1fr ;
+    grid-template-rows: 1fr 1fr ;
     gap: 25px;
-    grid-template-areas:'mapa1 mapa2 mapa3 mapa4'
-    'mapa5 mapa6 mapa7 mapa8' ;
+     grid-template-areas:'mapa1 mapa2 mapa3 '
+    'mapa5 mapa6  mapa7' 
+    ;
+   
 
 }
 
 
-.mapa { border: solid 5px  #5a4423;
+   
+
+@media (max-width:1850px) { 
+     .grilla-mapa { display: flex;
+        flex-direction: column;
+        gap: 15px;
+
+    }
+
+    
+}
+
+.mapa { border: solid 5px  #4e3919;
     display: flexbox;
-    padding: 0px
+    padding: 0px; 
+   background-color: #ded0b638;
 }
 .m1 {
      grid-area: mapa1 ;
@@ -448,13 +566,18 @@ form input ,textarea { width: 400px;
     grid-template-columns: auto;
     }
     
+.mapa h3 { background-color: #88714fe5;
+    color: #fcfaf4;
+    font-family: 'Times New Roman', Times, serif;
+  font-size: 50px;
 
+}
 .mapa:hover {
-    background-color: #f0e1bf9f;
+    background-color: #f0e1bf70;
     border-radius: 3%;
     box-shadow: 5px 5px 9px 10px;
     
-    
+ 
 }
 
 .mapa h3:hover { background-color:rgb(122, 89, 44);
@@ -523,4 +646,67 @@ padding: 10px 10px 10px 10px ;
    border-radius: 3% solid ;
     
 
+}
+
+.tipos-partidas{ display: grid;
+    grid-template-columns: 1fr 1fr;
+   grid-template-rows: 1fr 1fr  100%;
+   gap: 10px;
+  
+    
+       
+}
+ 
+@media (max-width:1250px) {
+    .tipos-partidas  { grid-template-columns: 1fr;
+    }
+
+}
+.textopartidas { 
+    color: #252420;
+    background-color: #FAEED1;
+    box-shadow: 5px 10px  1px  #8a7968 ;
+}
+.textopartidas p { margin: 0px;
+    max-width: 100%;
+    padding: 5px 15px;
+}
+.box-tipopartidas { border: solid 5px  #e9c28975;
+    display: flexbox;
+    padding: 0px;
+    border-radius: 5px;
+   background-color: #a19a92d5 ; 
+   
+   
+}
+
+.h3{ background-color: #F1D3B3;
+    font-size: 33px;
+    padding: 10px 5px;
+    text-align: center;
+    color: #11100f75;
+}
+
+.box-tipopartidas:hover { border: solid 10px  #fcd08eaf;
+    display: flex;
+    box-shadow: inset 5px 1px 20px 5px;
+    border-radius: 5px;
+   background-color: #858382d5 ; 
+
+}
+
+.textopartidas p:hover { margin: 10px;
+    
+    background-color: #cfc5afbe; 
+font-family: Verdana, Geneva, Tahoma, sans-serif; 
+font-size: 20px;
+
+}
+
+
+@media (max-width:1250px) {   
+ .card-group {display: grid; 
+    grid-template-columns: 1fr ;
+    
+}
 }

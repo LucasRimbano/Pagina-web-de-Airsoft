@@ -3,54 +3,92 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <link rel="stylesheet" href="./css/style.css" />
     <title>Airsoft-que-es </title>
 </head>
 <body>
     <header>
-        <!-- NAV BAR -->
-        <ul class="navbar">
-        <a  class="navbarlink" href="./pages/airsoft.html"  > Ir a ¿que es el airsoft?</a> 
-        <a class="navbarlink" href="./pages/tiposMarcadoras.html"> Tipos de Marcadoras</a> 
-        <a class="navbarlink" href="./pages/tiposPartidas.html"> Tipos de partidas</a>
-        <a class="navbarlink" href="./pages/mapabs.html"> Lugares de bs para ir a jugar</a>
-       <a class="navbarlink" href="./pages/contacto.html" >  Ir a  contacto</a>
-
-        </ul>
-        
+       
+         <div class="navbarindex">
+        <a  class="navbarlinkindex" href="./pages/airsoft.html"  > Ir a ¿que es el airsoft?</a> 
+        <a class="navbarlinkindex" href="./pages/tiposMarcadoras.html"> Tipos de Marcadoras</a> 
+        <a class="navbarlinkindex" href="./pages/tiposPartidas.html"> Tipos de partidas</a>
+        <a class="navbarlinkindex" href="./pages/mapabs.html"> Lugares de bs para ir a jugar</a>
+       <a class="navbarlinkindex" href="./pages/contacto.html" >  Ir a  contacto</a>
+         </div>
     </header>
-   
+    
     <main >
+      <section class="container-index">
+
+        <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="true">
+          <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+          </div>
+          <div class="carousel-inner">
+            <div class="carousel-item active md-4">
+              <img class="img-carrousel" src="./img/agachado.jpg"  alt="...">
+            </div>
+            <div class="carousel-item">
+              <img class="img-carrousel" src="./img/jakob-owens-Sa04XETPPx0-unsplash.jpg"  alt="...">
+            </div> 
+            <div class="carousel-item">
+              <img  class="img-carrousel" src="./img/cheto.jpg"  alt="...">
+            </div>
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+
+      </section>
+        
 
     <h1> Airsoft </h1>
-    <div class="fotoPrincipal">
-        <img src=" https://img.freepik.com/free-photo/army-soldiers-fighting-with-guns-defending-their-country_1303-26679.jpg?w=1380&t=st=1704769959~exp=1704770559~hmac=70efdd14db101370ca6fc376148f1a784ff47e4655f84ac23171d83674332829"
-        width="99%">
     
-    </div>
+     
+    <div class="card-group">
+        <div class="card">
+          <img src="./img/wallpaperflare.com_wallpaper.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">REGLAMENTO</h5>
+            <p class="card-text">La mayoria de los campos de buenos aires juegan bajo el mismo reglamento.</p>
+            <p class="card-text"><small class="text-muted">Leer Reglamento</small></p>
+            <a href="https://www.comunidadcordobesadeairsoft.org/wp-content/uploads/2019/09/reglamento_unificado_airsoft.pdf"  target="_blank"class="btn btn-primary">Reglamento RUN</a>
+          </div>
+        </div>
+        <div class="card">
+          <img src="./img/glock.JPG" style="width: 392px" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">PISTOLAS</h5>
+            <p class="card-text">Queres comprar secundarias</p>
+            <p class="card-text"><small class="text-muted" > ver pistolas</small></p>
+            <a href="https://evike.com/shop/21/839/"  target="_blank" class="btn btn-primary">Tipos de marcadoras</a>
+          </div>
+        </div>
+        <div class="card">
+          <img src="./img/7.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">EQUIPAMIENTO TACTICO</h5>
+            <p class="card-text">Chalecos,pouch,vestimenta,casco ,borcegos,etc</p>
+            <p class="card-text"><small class="text-muted">ver equipamiento </small></p>
+            <a href="https://www.evike.com/airsoft-tactical-gear-apparel/" target="_blank"
+            class="btn btn-primary">EQUIPAMIENTO TACTICO</a>
+            
+            
+          </div>
+        </div>
+      </div>
+     
 
-<div class="fotoPrincipal">
-    <img src="https://images.unsplash.com/photo-1569242840510-9fe6f0112cee?q=80&w=2069&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-    width="99%" >   
-</div>
-
-
-    <div id="textocomoseorigino">
-        <!-- insrtar video de jugador de airsoft el mio claramente -->    
- <p> Video de youtube por un jugador de airsoft en argentina buenos aires:</p>
- <a href=" https://www.youtube.com/watch?v=M2WifZV0a9A/" target="_blank"> video de jugador de airsoft</a> 
- 
- </div>
-<br> 
-<br> 
-<br> 
-<br> 
-<br> 
-<br> 
-<br> 
-<br> 
-<br> 
-<br> 
 </main>
 
     <footer>
@@ -72,5 +110,6 @@
        
     
     </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>   
 </body>
 </html>  
