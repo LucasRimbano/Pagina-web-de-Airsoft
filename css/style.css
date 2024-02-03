@@ -41,6 +41,7 @@ object-fit: cover;
 @media (max-width:850px ) {
     .card-title { padding: 0px; 
 
+            margin: 0px
 }}
 
 
