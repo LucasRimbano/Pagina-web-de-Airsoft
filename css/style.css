@@ -656,7 +656,8 @@ padding: 10px 10px 10px 10px ;
     text-align: center;
     margin-bottom: 0;
 }
-
+.texto-tipo img { width: 1200px;
+    width: 1200px;} 
 .texto-tipo p:hover { font-size: 50px;
     color: #080808;
    border-radius: 3% solid ;
@@ -676,7 +677,8 @@ padding: 10px 10px 10px 10px ;
 @media (max-width:1250px) {
     .tipos-partidas  { grid-template-columns: 1fr;
     }
-
+.texto-tipo img{ width: 450px;
+    height: 250px;}
 }
 .textopartidas { 
     color: #252420;
