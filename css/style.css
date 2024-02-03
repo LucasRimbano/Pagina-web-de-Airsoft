@@ -39,8 +39,8 @@ object-fit: cover;
     justify-content: center; }
 
 @media (max-width:850px ) {
-    .card-title { padding: 0px; 
-
+    .card-title { padding: 3px 2px; 
+width:200px ; 
             margin: 0px
 }}
 
