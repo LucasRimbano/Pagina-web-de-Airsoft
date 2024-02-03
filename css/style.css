@@ -38,6 +38,10 @@ object-fit: cover;
     border-radius: 5px;
     justify-content: center; }
 
+@media (max-width:850px ) {
+    .card-title { padding: 0px; 
+
+}}
 
  .card-body a:hover { font-size: 20px;
      margin-left: 50px;
