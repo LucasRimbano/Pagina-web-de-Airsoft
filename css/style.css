@@ -641,8 +641,8 @@ padding: 10px 10px 10px 10px ;
  text-decoration: underline;
  }
 @media (max-width:850px) {
-    .mapa-link { fontsize:25px 
-              margin:0px
+    .mapa-link a { fontsize:25px 
+              margin: 0px ;
               padding: 2px 2px;}
 
 }
