@@ -469,7 +469,7 @@ gap: 0px;
 
 }
 
-@media (max-width:1250px)
+@media (max-width:850px)
  {
     .grilla-contacto { display: flex;
     flex-direction: column;
