@@ -656,8 +656,8 @@ padding: 10px 10px 10px 10px ;
     text-align: center;
     margin-bottom: 0;
 }
-.img-airsoft { width:1000px
-             height:1000px}
+.img-airsoft { width:950px
+             height:950px}
 
 .texto-tipo p:hover { font-size: 50px;
     color: #080808;
@@ -678,8 +678,8 @@ padding: 10px 10px 10px 10px ;
 @media (max-width:1250px) {
     .tipos-partidas  { grid-template-columns: 1fr;
     }
-.img-airsoft{ width: 450px;
-    height: 250px;}
+.img-airsoft{ width: 400px;
+    height: 200px;}
 }
 .textopartidas { 
     color: #252420;
