@@ -678,8 +678,8 @@ padding: 10px 10px 10px 10px ;
 @media (max-width:1250px) {
     .tipos-partidas  { grid-template-columns: 1fr;
     }
-.texto-tipo img{ width: 450px;
-    height: 250px;}
+.texto-tipo img{ width: 400px;
+    height: 200px;}
 
 }
 .textopartidas { 
