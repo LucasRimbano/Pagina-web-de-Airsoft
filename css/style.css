@@ -491,7 +491,8 @@ object-fit: cover;}
     .form { width: 600px;
     
     }
-    .textarea {width:450px; 
+    .textarea { margin-left: 0px;
+        width:400px; 
                height: 300px;
                
          
