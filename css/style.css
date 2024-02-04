@@ -39,10 +39,12 @@ object-fit: cover;
     justify-content: center; }
 
 @media (max-width:850px ) {
-    .card-title { padding: 0px; 
-        margin: 0px;
+   
 
-}}
+    .card-title { padding: 3px 2px; 
+width: 200px ; 
+    }
+}
 
 
  .card-body a:hover { font-size: 20px;
@@ -655,7 +657,10 @@ padding: 10px 10px 10px 10px ;
     text-align: center;
     margin-bottom: 0;
 }
+.texto-tipo img { width: 1200px;
+    width: 1200px;
 
+}
 .texto-tipo p:hover { font-size: 50px;
     color: #080808;
    border-radius: 3% solid ;
@@ -675,6 +680,8 @@ padding: 10px 10px 10px 10px ;
 @media (max-width:1250px) {
     .tipos-partidas  { grid-template-columns: 1fr;
     }
+    .texto-tipo img{ width: 450px;
+    height: 250px;}
 
 }
 .textopartidas { 
