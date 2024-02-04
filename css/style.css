@@ -469,21 +469,35 @@ gap: 0px;
 
 }
 
-@media (max-width:850px)
+.c1 {
+    background-image: url(https://images.unsplash.com/photo-1665065769045-159f8ecf5016?q=80&w=1933&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+    background-size: 120%;
+    height: 100%;
+    width: 98%;
+    padding-left: 55px;
+
+    
+}
+@media (max-width:950px)
  {
     .grilla-contacto { display: flex;
     flex-direction: column;
     padding-bottom: 20px;
-    gap: 3px;}
-    .input { width: 200px; }
+    gap: 3px;
+object-fit: cover;}
+    .input { width: 250px; }
     .form { width: 600px;
     
     }
-    .textarea {width:250px; 
+    .textarea {width:450px; 
                height: 300px;
                
          
     }
+    .c1 { height: 20px;
+      
+
+    } 
 }
 
 
@@ -497,14 +511,7 @@ border:  7px solid rgba(71, 70, 12, 0.877);
 
 }
 
-.c1 {
-    background-image: url(https://images.unsplash.com/photo-1665065769045-159f8ecf5016?q=80&w=1933&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
-    background-size: 120%;
-    height: 100%;
-    width: 98%;
-    padding-left: 55px;
-    
-}
+
 
 
  .contacto img {  object-fit: fill;
