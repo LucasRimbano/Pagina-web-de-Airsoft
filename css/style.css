@@ -69,7 +69,7 @@ footer {margin-bottom: 0px;
     text-align: center;
    padding-top:  15px ; 
    padding-bottom: 5px;
-  
+  margin-bottom: 0px;
   
   }
 
@@ -326,6 +326,7 @@ padding: 10px 10px 10px 10px ;
     align-items: stretch;
     justify-content: flex-start;
      }
+     
     .mapa h3{ padding: 0px;
         margin: 0px;
 
@@ -334,6 +335,7 @@ padding: 10px 10px 10px 10px ;
     margin: 0px;
 font-size: 15px;
  }
+
 }
 
 
@@ -697,8 +699,12 @@ padding: 10px 10px 10px 10px ;
        
 }
  
-@media (max-width:1250px) {
-    .tipos-partidas  { grid-template-columns: 1fr;
+@media (max-width:950px) {
+    .tipos-partidas  { display: flex;
+        flex-direction: column;
+        flex-wrap:wrap ;
+        margin: 0px;
+        
     }
 .texto-tipo img{ width: 400px;
     height: 200px;}
