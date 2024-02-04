@@ -477,7 +477,8 @@ gap: 0px;
     flex-direction: column;
     padding-bottom: 20px;
     gap: 3px;
-
+.form{ width:400px;
+      heigth:600px;
 }
  }
 
