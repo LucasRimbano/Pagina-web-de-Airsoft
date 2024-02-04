@@ -491,11 +491,9 @@ object-fit: cover;}
     .form { width: 600px;
     
     }
-    .textarea {width:450px; 
-               height: 300px;
-               
-         
-    }
+    .textarea { margin-left: 0px;
+        width:400px; 
+               height: 300px;}
     .c1 { height: 20px;
       
 
@@ -701,7 +699,7 @@ padding: 10px 10px 10px 10px ;
  
 @media (max-width:950px) {
     .tipos-partidas  { display: flex;
-        flex-direction: column;
+        flex-wrap: row;
         flex-wrap:wrap ;
         margin: 0px;
         
