@@ -641,7 +641,7 @@ padding: 10px 10px 10px 10px ;
  text-decoration: underline;
  }
 @media (max-width:850px) {
-    #linkmapa  { fontsize:25px ;
+    #linkmapa  { font-size:25px ;
               margin: 0px ;
               padding: 2px 2px;}
 
