@@ -1,0 +1,85 @@
+[33mcommit 54856999e699b9574a274182e76fd7a8ddc9a666[m[33m ([m[1;36mHEAD[m[33m -> [m[1;32mmain[m[33m)[m
+Merge: 8969ab0 cb67914
+Author: Lucas Rimbano <lucasrimbano@gmail.com>
+Date:   Sat Feb 3 21:00:00 2024 -0300
+
+    mejorando responsibe
+
+[33mcommit 8969ab02854bc5fa4d0f8e4bfd9ad347b0100c2e[m
+Author: Lucas Rimbano <lucasrimbano@gmail.com>
+Date:   Sat Feb 3 20:43:45 2024 -0300
+
+    responsibe cambios
+
+[33mcommit cb67914007631e3b42f3d69fc83dbcebcfb4c9ad[m
+Author: LucasRimbano <158349429+LucasRimbano@users.noreply.github.com>
+Date:   Sat Feb 3 20:42:41 2024 -0300
+
+    Update style.css
+
+[33mcommit bb88da2044b450c960979b7c2136c1bc0f77bdc8[m
+Author: LucasRimbano <158349429+LucasRimbano@users.noreply.github.com>
+Date:   Sat Feb 3 20:36:54 2024 -0300
+
+    Update style.css
+
+[33mcommit ff892b649f7dbff4c508f1903ba9f8d27a1ead27[m
+Merge: 032440c e3ea00d
+Author: Lucas Rimbano <lucasrimbano@gmail.com>
+Date:   Sat Feb 3 20:27:20 2024 -0300
+
+    Merge branch 'main' of https://github.com/LucasRimbano/primer_repo
+
+[33mcommit 032440ce2beebdde2cc37176c9178912ecd5cb09[m
+Author: Lucas Rimbano <lucasrimbano@gmail.com>
+Date:   Sat Feb 3 20:20:07 2024 -0300
+
+    responsibe terminado
+
+[33mcommit a206d899850a88924a42afa06a391878ade00793[m
+Author: Lucas Rimbano <lucasrimbano@gmail.com>
+Date:   Sat Feb 3 20:18:34 2024 -0300
+
+    terminada
+
+[33mcommit e3ea00d96ccdb465646276e7bf7941757f8a6e34[m
+Author: LucasRimbano <158349429+LucasRimbano@users.noreply.github.com>
+Date:   Sat Feb 3 19:48:02 2024 -0300
+
+    Update README.md
+
+[33mcommit 279e70bb4fee7927c3b6fbd3778010fa17b2cc0e[m
+Author: Lucas Rimbano <lucasrimbano@gmail.com>
+Date:   Sat Feb 3 19:10:43 2024 -0300
+
+    responsive actualizado
+
+[33mcommit 1164c14a6b7f5ea8877b60470520f2b19d4fca05[m
+Author: Lucas Rimbano <lucasrimbano@gmail.com>
+Date:   Sat Feb 3 18:37:06 2024 -0300
+
+    first commit
+
+[33mcommit 8369a5d1268ef225769a88ebe5d3049168d25802[m
+Author: Lucas Rimbano <lucasrimbano@gmail.com>
+Date:   Thu Feb 1 13:53:09 2024 -0300
+
+    agregando bootstrap a mi navbar
+
+[33mcommit c619849542f0e282668e6458f24a20d632916dde[m[33m ([m[1;32mnueva_Rama_navbar[m[33m, [m[1;32mmi_rama[m[33m)[m
+Author: Lucas Rimbano <lucasrimbano@gmail.com>
+Date:   Wed Jan 31 18:30:18 2024 -0300
+
+    first commit
+
+[33mcommit 95a29e9e406da54e585c89447174897801616dde[m
+Author: Lucas Rimbano <lucasrimbano@gmail.com>
+Date:   Wed Jan 31 18:25:36 2024 -0300
+
+    first commit
+
+[33mcommit f6a265966a8433ed4b4573647752fdf3f304e83e[m
+Author: Lucas Rimbano <lucasrimbano@gmail.com>
+Date:   Wed Jan 31 14:41:20 2024 -0300
+
+    cree proyecto html css y linkie
