@@ -59,18 +59,19 @@ width: 200px ;
 
 footer {margin-bottom: 0px;
    margin-top: 50px;
+  
     
  }
 
 
 .footer { 
-    background-color:  #BBAB8C ; 
+    background-color:  #bba67de5 ; 
     align-items: center;
     text-align: center;
    padding-top:  15px ; 
-   padding-bottom: 5px;
-  margin-bottom: 0px;
-  
+   padding-bottom: 55px;
+   margin-bottom: 0px;
+
   }
 
 
@@ -95,7 +96,7 @@ footer {margin-bottom: 0px;
     background-color: #cfc4a6d3;
     align-items: center;
     border-radius: 3px;
-    padding-left: 200px;
+    padding-left: 380px;
     padding-top: 25px;
     padding-bottom: 25px;
 
@@ -103,7 +104,7 @@ footer {margin-bottom: 0px;
 
 .navbarlinkindex {background-color: #cfc5af; 
     text-decoration: none;
-    margin-left: 20px;
+    margin-left: 0px;
     margin-right: 20px;
     border-top: solid 3px rgb(75, 73, 62);
     border-bottom: solid 10px #383827;
@@ -121,10 +122,11 @@ footer {margin-bottom: 0px;
     margin: 0px 0px; 
     padding: 10px 2px;
 font-size: 10px; }
- .navbarlinkindex { padding: 5px 5px;
-margin: 0px;
+ .navbarlinkindex { padding: 5px 15px;
+margin: 0px 15px;
 font-size: 15px;
 color: #5a4423;}
+
   
   }
 .navbar { display: flex;
@@ -132,12 +134,14 @@ color: #5a4423;}
     background-color: #cfc4a6d3;
     align-items: center;
     border-radius: 3px;
-    padding-left: 200px;
+    padding-left: 20px;
     padding-top: 25px;
     padding-bottom: 25px;
+    padding-top: 30px;
+    
+    
 
 }
-
 
     
 
@@ -157,7 +161,7 @@ color: #5a4423;}
   }
 
   .navbarlink  { display: flex;
-    padding-left: 350px;
+    padding-left: 50px;
     margin: 3px 300px;   
   }
 
@@ -181,31 +185,46 @@ color: #5a4423;}
     border-left: solid 3px#3a3434;
     border-right:solid 3px #413d3d;
     border-radius: 8px; 
-    padding: 5px 3px;
+    padding: 5px 10px;
 
   }
   .linkindex:hover { background-color:  #ebd9bfa6;
-    font-size: 39px; 
+    font-size: 29px; 
     color:#252420;
-    padding-left: 200px;
-    padding-right: 100px ;
+    padding-left: 80px;
+    padding-right: 80px ;
     margin-top: 7px;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    transition: 0.7s;
+    transition: 0.8s;
 
   }
 
 .navbarlink:hover { background-color:  #ebd9bfa6;
-    font-size: 39px; 
-  
+    font-size: 29px;
     color:#252420;
    padding-left: 400px;
    padding-right: 300px ;
    margin-top: 7px;
    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
    transition: 0.7s;
- 
-}
+ }
+ @media (max-width:900px) {
+    .navbarlink { width: 70%;
+      font-size: 15px;
+      padding-left: 5px;
+      padding-right: 5px;
+    }
+   .navbarlink:hover{ font-size: 25px; 
+      padding-left: 50px;
+      padding-right: 15px;
+      width: 85%;
+     transition: 0.3s;
+    }
+    .linkindex:hover{ font-size: 20px;
+        transition: 0.3s;
+
+    }
+ }
 
 
 a { color: rgb(155, 103, 5);
@@ -213,8 +232,35 @@ a { color: rgb(155, 103, 5);
    text-align: center;
 }
 
+.footer a:hover { background-color: #8a7968; 
+color: #fcfaf4;
+border: 5px solid #a87844;
+border-radius: 15px;
+padding: 6px 3px;
+transition: 0.3s;
 
-   
+
+}
+
+ 
+.top-navigation {background-color: #cfc5af; 
+    text-decoration: none;
+    margin-left: 20px;
+    margin-right: 20px;
+    border-top: solid 3px rgb(75, 73, 62);
+    border-bottom: solid 10px #383827d7;
+    border-left: solid 3px#3a3434;
+    border-right:solid 3px #413d3d;
+    border-radius: 8px;
+    padding: 10px 10px 10px 10px ;
+    font-size: 15px;
+    
+   }
+.top-navigation:hover { font-size: 20px;
+    padding-left: 15px;
+    margin-left: 20px;
+     transition: 0.4s;
+}
 
 
 body { padding: 0px 0px;
@@ -241,7 +287,7 @@ body { padding: 0px 0px;
 }
 .navbarlink{display: flex;
     margin: 0px 0px; 
-    padding: 10px 2px;
+    padding: 10px 5px;
 
 }    
 }
