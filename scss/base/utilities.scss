@@ -1,0 +1,11 @@
+.flexible {
+  
+    display: grid;
+    grid-template-columns: 1fr 1fr ;
+    grid-template-areas: 'a1 a2' ; 
+    gap: 0px;
+    color: #fcf9ee  ; 
+    font-size: 33px ;
+    
+
+  }

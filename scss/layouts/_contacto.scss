@@ -1,11 +1,6 @@
  /**ACA EMPIEZA EL HTML DE CONTACTO **/ 
 
- .grilla-contacto  { color: #fcf9ee  ; 
-    font-size: 33px ;
-    display: grid;
-    grid-template-columns: 1fr 1fr ;
-    grid-template-areas: 'a1 a2' ; 
-    gap: 0px;
+ .grilla-contacto  { @extend .flexible ;
     
        .contacto { display: flexbox; 
           width: 100%;

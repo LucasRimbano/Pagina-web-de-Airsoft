@@ -29,7 +29,8 @@ body{ padding: 0px 0px;
       display: flexbox;
       padding: 0px 0px;
       border-radius: 5px;
-     background-color: #a19a92d5 ; 
+     background-color: #a19a92d5 ;
+    
       
      .h2{ background-color: #F1D3B3;
         font-size: 33px;
@@ -42,8 +43,11 @@ body{ padding: 0px 0px;
         display: flex;
         box-shadow: inset 5px 1px 20px 5px;
         border-radius: 5px;
-       background-color: #858382d5 ; 
-       transition: 0.2s;}
+       background-color: #b1ab75d5 ; 
+       transition: 0.6s;
+       transform: scale(1, 1.1);
+       font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+       }
 
          .textopartidas { 
           color: #252420;
@@ -53,9 +57,10 @@ body{ padding: 0px 0px;
           & p:hover { margin: 10px;
     
             background-color: #cfc5af ; 
-          font-family: Verdana, Geneva, Tahoma, sans-serif; 
-          font-size: 20px;
-          transition: 0.3s;
+          font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; 
+          transform: scale(2, 0,1);
+          transition: 0.6s;
+          border-radius: 3px;
           }
           
 

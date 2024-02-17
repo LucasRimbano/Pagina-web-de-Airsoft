@@ -73,11 +73,11 @@
       padding-left: 5px;
       padding-right: 5px;
     }
-   .navbarlink:hover{ font-size: 25px; 
+   .navbarlink:hover{ font-size: 10px; 
       padding-left: 50px;
       padding-right: 15px;
-      width: 85%;
-     transition: 0.3s;
+      width: 70%;
+      transition: 0.4s;
     }
     .linkindex:hover{ font-size: 20px;
         transition: 0.3s;
@@ -88,11 +88,12 @@
 
 /** INDEX **/ 
 
-@media (max-width:1450px ) {
+@media (max-width:2050px ) {
  
 
-    .card-title { padding: 3px 2px; 
-width: 300px ; 
+    .card-title { 
+       padding: 3px 2px; 
+       width: 400px ; 
     }
 }
 
@@ -100,7 +101,7 @@ width: 300px ;
 
 
 .card-title { padding: 3px 2px; 
-width: 200px ; 
+             width: 250px ; 
 }
 }
 

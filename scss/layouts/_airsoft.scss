@@ -24,17 +24,20 @@
     font-size: 45px;
       color: #ffffff; /**lo voy a cambiar a blanco por el modo oscuro **/
      border-radius: 3% solid ;
-      transition: 0.3s;
+     transition: 0.3s;
+     
     
     } 
-       
+  
+    
+  
    /** con este condicional estoy dando modo oscuro a la mayoria de los textos principales de los html **/
    @if $estilo-oscuro == dark {background-color:  #F1D3B3}
    @else if $estilo-oscuro == light { background-color: #63513ec7; color:#ffffff;
    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
    font-size: 38px;}  
 
-   h3 {
+   h2 {
     background-color: #BBAB8C;
     box-sizing: border-box ;
     color: rgb(155, 103, 5) ;
@@ -72,7 +75,7 @@
         margin: 0px 0px;
        
         padding: 5px 15px;
-        
+       
         @if $estilo-oscuro == dark {background-color:  #F1D3B3}
         @else if $estilo-oscuro == light { background-color: #63513ec7; color:#ffffff;
         font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
