@@ -1,0 +1,275 @@
+/** MEDIA DE NAVBARINDEX **/ 
+
+@media (max-width:1450px) { .navbarindex { background-color: #998d59d0;
+    display: flexbox;
+    flex-direction: row;
+    margin: 0px 0px; 
+    padding: 10px 30px;
+    font-size: 10px;
+    gap: 3px; }
+  .navbarlinkindex { padding: 5px 5px;
+  margin: 0px 25px;
+  font-size: 15px;
+  color: #5a4423;}
+  .navbarlinkindex:hover{ font-size: 20px;
+    padding: 8px 10px;
+    transition: 0.3s;
+    text-decoration: underline ;
+    border-top: solid 3px #383827b9;
+    border-left: solid 3px #383827b9;
+    border-right:solid 5px #383827b9 ;
+    border-bottom: solid 8px #383827b9;
+    color: #0f0e0d;
+  }
+  
+  }
+
+  @media (max-width:900px) { .navbarindex { background-color: #998d59d0;
+    display: flexbox;
+    flex-direction: column;
+    margin: 0px 0px; 
+    padding: 10px 2px;
+    font-size: 10px;
+    gap: 3px; }
+  .navbarlinkindex { padding: 5px 15px;
+  margin: 0px 15px;
+  font-size: 15px;
+  color: #5a4423;}
+  .navbarlinkindex:hover{ font-size: 20px;
+    padding: 8px 10px;
+    transition: 0.3s;
+    text-decoration: underline ;
+    border-top: solid 3px #383827b9;
+    border-left: solid 3px #383827b9;
+    border-right:solid 5px #383827b9 ;
+    border-bottom: solid 8px #383827b9;
+    color: #0f0e0d;
+  
+  
+  }
+  }  
+
+
+  /**MEDIA DE NAVBAR HTMLS ¿ porque no me lo toma?**/ 
+
+
+  @media (max-width:1300px) { .navbar {display: flex;
+    margin: 0px 0px; 
+    padding: 10px 2px;
+  
+  }
+  .navbarlink{display: flex;
+      margin: 0px 0px; 
+      padding: 10px 5px;
+  
+  }    
+  }
+
+
+
+ @media (max-width:900px) {
+    .navbarlink { width: 70%;
+      font-size: 15px;
+      padding-left: 5px;
+      padding-right: 5px;
+    }
+   .navbarlink:hover{ font-size: 25px; 
+      padding-left: 50px;
+      padding-right: 15px;
+      width: 85%;
+     transition: 0.3s;
+    }
+    .linkindex:hover{ font-size: 20px;
+        transition: 0.3s;
+
+    }
+ }
+  
+
+/** INDEX **/ 
+
+@media (max-width:1450px ) {
+ 
+
+    .card-title { padding: 3px 2px; 
+width: 300px ; 
+    }
+}
+
+@media (max-width:850px ) {
+
+
+.card-title { padding: 3px 2px; 
+width: 200px ; 
+}
+}
+
+
+
+
+
+/** MEDIA DE QUE ES EL AIRSOFT 1 HTML **/ 
+
+
+
+
+
+/** MEDIA DE TIPOS DE MARCADORAS **/ 
+@media (max-width:1750px) {
+    .grilla-tipoMarcadoras { display: flex ;  
+   flex-direction: column; 
+   gap: 10px;
+   align-items: center;
+   justify-content: flex-start;
+  
+   ; 
+    }
+   
+    .b1 { 
+       order: 1;} 
+    .b5 { 
+       order: 2 ;}
+    .b2 { 
+       order: 3}
+    .b6 {
+       order:4;}
+    .b3 {
+       order:5;}
+    .b7 {
+        order:6;}
+    .b4 {
+       order:7;}
+    .b8 {
+       order: 8;}
+  
+     
+    }
+  
+  @media (max-width:950px) {
+    .grilla-tipoMarcadoras { display: flex ;  
+   flex-direction: column; 
+   gap: 10px;
+   align-items: center;
+   justify-content: flex-start;
+  
+   ; 
+    }
+   
+    .b1 { 
+       order: 1;} 
+    .b5 { 
+       order: 2 ;}
+    .b2 { 
+       order: 3}
+    .b6 {
+       order:4;}
+    .b3 {
+       order:5;}
+    .b7 {
+        order:6;}
+    .b4 {
+       order:7;}
+    .b8 {
+       order: 8;}
+   
+    }
+ 
+    
+
+    /**MEDIA TIPO PARTIDAS 3ER HTML **/  
+
+    @media (max-width:950px) {
+        .tipos-partidas  { display: flex;
+            flex-wrap: row;
+            flex-wrap:wrap ;
+            margin: 0px;
+            
+        }
+      .texto-tipo img{ width: 400px;
+        height: 200px;}
+      
+      }
+
+
+      @media (max-width:1250px) {   
+        .card-group {display: grid; 
+          grid-template-columns: 1fr ;
+          
+        }
+        }
+
+
+    /** MEDIA LUGARES DONDE JUGAR MAPA  4TO HTML   **/      
+
+
+    @media (max-width:1850px) { 
+        .grilla-mapa { display: flex;
+           flex-direction: column;
+           gap: 15px;
+     
+       }
+       iframe { max-width: 90%;
+        min-height: 90%; 
+
+     } 
+       
+     }
+        
+     @media (max-width:850px) {
+        #linkmapa  { font-size:5px ;
+                  margin: 0px ;
+                  padding: 2px 2px;}
+               
+     iframe { max-width: 90%;
+        min-height: 90%; 
+
+     }           
+      
+      }
+
+       /** MEDIA CONTACTO HTML 5 **/ 
+
+       @media (max-width:950px)
+{
+  .grilla-contacto { display: flex;
+  flex-direction: column;
+  padding-bottom: 20px;
+  gap: 3px;
+object-fit: cover;}
+  .input { width: 250px; }
+  .form { width: 600px;
+  
+  }
+  .textarea { margin-left: 0px;
+      width:400px; 
+             height: 300px;}
+  .c1 { height: 20px;
+    
+
+  }
+
+
+}
+
+
+       @media (max-width:950px)
+{
+  
+  .Rimba   { display: flex;
+    
+  position: fixed;
+  bottom:  50px ; 
+  right: 5px;
+  font-size: 50px;
+  border:solid 7px #2b240a;
+  border-radius: 15% ; 
+}
+}
+/**aca tengo que mover el bottom  **/ 
+
+
+
+
+
+
+

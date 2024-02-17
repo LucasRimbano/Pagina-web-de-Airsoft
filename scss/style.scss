@@ -1,15 +1,15 @@
-.container-index {  .img-carrousel { max-width:100%;
-    max-height: 100%;
-    margin: 0px;
-    padding: 0px;
-  object-fit: cover;
-  }
-  
 
-   &button:hover { background-color: #adada473; 
+@import 'base/vars' ;
+@import 'base/reset' ;
+@import 'components/footer' ;
+@import 'components/navbar-index' ;
+@import 'components/navbar' ;
+@import 'layouts/airsoft' ;  
+@import 'layouts/contacto' ; 
+@import 'layouts/index' ;
+@import 'layouts/mapabs' ;  
+@import 'layouts/tipoMarcadoras' ;
+@import 'layouts/tipoPartidas' ;
+@import 'layouts/mediaqueries' ;
+ 
 
-        border: solid 5px #c4b77163; 
-       
-       
-       }
-}

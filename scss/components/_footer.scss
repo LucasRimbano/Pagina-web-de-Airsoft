@@ -1,0 +1,70 @@
+
+
+/** ACA EMPIEZA  FOOTER **/
+ 
+
+
+footer {margin-bottom: 0px;
+    margin-top: 50px;
+   
+    .footer { 
+        background-color:  #bba67de5 ; 
+        align-items: center;
+        text-align: center;
+       padding-top:  15px ; 
+       padding-bottom: 55px;
+       margin-bottom: 0px;
+      
+
+       a { color: rgb(155, 103, 5);
+        font-size: 25px;
+       text-align: center;
+
+
+       &:hover { background-color: #8a7968; 
+        color: #fcfaf4;
+        border: 5px solid #a87844;
+        border-radius: 15px;
+        padding: 6px 3px;
+        transition: 0.3s;
+        
+        
+        }
+      
+          }
+         
+          .top-navigation {background-color: $primary-color; 
+            text-decoration: none;
+            margin-left: 20px;
+            margin-right: 20px;
+            border-top: solid 3px rgb(75, 73, 62);
+            border-bottom: solid 10px #383827d7;
+            border-left: solid 3px#3a3434;
+            border-right:solid 3px #413d3d;
+            border-radius: 8px;
+            padding: 10px 10px 10px 10px ;
+            font-size: 15px;
+            &:hover { font-size: 20px;
+                padding-left: 15px;
+                margin-left: 20px;
+                 transition: 0.4s;
+              }
+           }
+    
+        
+        
+        
+        }
+
+        
+      }
+   
+
+
+
+
+
+
+  
+  
+ 

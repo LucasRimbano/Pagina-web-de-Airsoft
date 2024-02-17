@@ -1,540 +1,511 @@
-
-/** ACA EMPIEZA INDEX.HTML **/ 
-
-.img-carrousel { max-width:100%;
-  max-height: 100%;
-  margin: 0px;
-  padding: 0px;
-object-fit: cover;
+@charset "UTF-8";
+/** solo tengo que cambiarlo en los dondicionales tengo que 
+escribir el nombre de la variable que quiero usar  y se ejecutra 
+el condicional segun a donde me quiero mover si estilo oscuro o mas claro
+**/
+/** ACA EMPIEZA  FOOTER **/
+footer {
+  margin-bottom: 0px;
+  margin-top: 50px;
 }
-
-.container-index button:hover { background-color: #adada473; 
-
- border: solid 5px #c4b77163; 
-
-
-}
-
-.card-body {  background-color: #e0d9cd;
-  border: solid 3px #414130e3;
-  border-radius: 3px ;
-  
-  
-}
-
-.card-title {  padding-left: 0px;
-  text-shadow: #5a4423;
-  border: solid 1px #2b2a2986;
-  margin-right: 300px; 
-  padding: 3px 10px;
-  padding-left: 35px;
-  border-radius: 5px;
-  justify-content: center; }
-
-
-  @media (max-width:1450px ) {
- 
-
-      .card-title { padding: 3px 2px; 
-  width: 300px ; 
-      }
-  }
-
-@media (max-width:850px ) {
- 
-
-  .card-title { padding: 3px 2px; 
-width: 200px ; 
-  }
-}
-
-
-.card-body a:hover { font-size: 20px;
-   margin-left: 50px;
-   transition: 0.5s;
-   box-shadow: #3a3434 3px 2px 1px 3px ;
-
-}  
-/** ACA TERMINA EL HMTL.INDEX**/ 
-
-/** ACA EMPIEZA EL FOOTER *
-
-*/
-#volverpagprinc { text-align: center;
-
-}
-
-footer {margin-bottom: 0px;
- margin-top: 50px;
-
-  
-}
-
-
-.footer { 
-  background-color:  #bba67de5 ; 
+footer .footer {
+  background-color: rgba(187, 166, 125, 0.8980392157);
   align-items: center;
   text-align: center;
- padding-top:  15px ; 
- padding-bottom: 55px;
- margin-bottom: 0px;
-
+  padding-top: 15px;
+  padding-bottom: 55px;
+  margin-bottom: 0px;
 }
-
-a { color: rgb(155, 103, 5);
+footer .footer a {
+  color: rgb(155, 103, 5);
   font-size: 25px;
- text-align: center;
-}
-
-.footer a:hover { background-color: #8a7968; 
-color: #fcfaf4;
-border: 5px solid #a87844;
-border-radius: 15px;
-padding: 6px 3px;
-transition: 0.3s;
-
-
-}
-
-/*ACA TERMINA EL FOOTER  */
-
-
-
-
-
-.titulo { margin-bottom: 25px; 
-  margin-top: 0px; 
-   font-size: 50px;
   text-align: center;
-  color:#fcf9ee;
-  background-color: #5D5241;
-  box-shadow: 2px 10px 3px #928269; 
-  padding-top: 10px;
-  padding-bottom: 10px;
-
+}
+footer .footer a:hover {
+  background-color: #8a7968;
+  color: #fcfaf4;
+  border: 5px solid #a87844;
+  border-radius: 15px;
+  padding: 6px 3px;
+  transition: 0.3s;
+}
+footer .footer .top-navigation {
+  background-color: #cfc5af;
+  text-decoration: none;
+  margin-left: 20px;
+  margin-right: 20px;
+  border-top: solid 3px rgb(75, 73, 62);
+  border-bottom: solid 10px rgba(56, 56, 39, 0.8431372549);
+  border-left: solid 3px #3a3434;
+  border-right: solid 3px #413d3d;
+  border-radius: 8px;
+  padding: 10px 10px 10px 10px;
+  font-size: 15px;
+}
+footer .footer .top-navigation:hover {
+  font-size: 20px;
+  padding-left: 15px;
+  margin-left: 20px;
+  transition: 0.4s;
 }
 
-/* NAV BAR INDEX */ 
-
-
-
-.navbarindex {display: flex;
+/** NAV BAR INDEX **/
+.navbarindex {
+  display: flex;
   gap: 30px;
-  background-color: #cfc4a6d3;
+  background-color: rgba(207, 196, 166, 0.8274509804);
   align-items: center;
   border-radius: 3px;
   padding-left: 380px;
   padding-top: 30px;
   padding-bottom: 25px;
-
 }
-
-.navbarlinkindex {background-color: #cfc5af; 
+.navbarindex .navbarlinkindex {
+  background-color: #cfc5af;
   text-decoration: none;
   margin-left: 0px;
   margin-right: 20px;
   border-top: solid 3px rgb(75, 73, 62);
   border-bottom: solid 10px #383827;
-  border-left: solid 3px#3a3434;
-  border-right:solid 3px #413d3d;
+  border-left: solid 3px #3a3434;
+  border-right: solid 3px #413d3d;
   border-radius: 8px;
-  padding: 10px 20px 10px 20px ;
+  padding: 10px 20px 10px 20px;
   gap: 10px;
-
+  color: rgb(155, 103, 5);
 }
-.navbarlinkindex:hover{ font-size: 30px;
+.navbarindex a:hover {
+  font-size: 30px;
   padding: 8px 10px;
   transition: 0.5s;
-  text-decoration: underline ;
-  border-top: solid 3px #383827b9;
-  border-left: solid 3px #383827b9;
-  border-right:solid 5px #383827b9 ;
-  border-bottom: solid 8px #383827b9;
+  text-decoration: underline;
+  border-top: solid 3px rgba(56, 56, 39, 0.7254901961);
+  border-left: solid 3px rgba(56, 56, 39, 0.7254901961);
+  border-right: solid 5px rgba(56, 56, 39, 0.7254901961);
+  border-bottom: solid 8px rgba(56, 56, 39, 0.7254901961);
   color: #080808;
-
-
 }
 
-
-
-
-@media (max-width:1450px) { .navbarindex { background-color: #998d59d0;
-  display: flexbox;
-  flex-direction: row;
-  margin: 0px 0px; 
-  padding: 10px 30px;
-  font-size: 10px;
-  gap: 3px; }
-.navbarlinkindex { padding: 5px 5px;
-margin: 0px 25px;
-font-size: 15px;
-color: #5a4423;}
-.navbarlinkindex:hover{ font-size: 20px;
-  padding: 8px 10px;
-  transition: 0.3s;
-  text-decoration: underline ;
-  border-top: solid 3px #383827b9;
-  border-left: solid 3px #383827b9;
-  border-right:solid 5px #383827b9 ;
-  border-bottom: solid 8px #383827b9;
-  color: #0f0e0d;
-}
-
-}
-@media (max-width:900px) { .navbarindex { background-color: #998d59d0;
-  display: flexbox;
-  flex-direction: column;
-  margin: 0px 0px; 
-  padding: 10px 2px;
-  font-size: 10px;
-  gap: 3px; }
-.navbarlinkindex { padding: 5px 15px;
-margin: 0px 15px;
-font-size: 15px;
-color: #5a4423;}
-.navbarlinkindex:hover{ font-size: 20px;
-  padding: 8px 10px;
-  transition: 0.3s;
-  text-decoration: underline ;
-  border-top: solid 3px #383827b9;
-  border-left: solid 3px #383827b9;
-  border-right:solid 5px #383827b9 ;
-  border-bottom: solid 8px #383827b9;
-  color: #0f0e0d;
-
-
-}
-/* NAV BAR (FUERA DEL INDEX)*/
-
-}
-.navbar { display: flex;
+/** NAV BAR FUERA DEL INDEX**/
+.navbar {
+  display: flex;
   gap: 30px;
-  background-color: #cfc4a6d3;
+  background-color: rgba(207, 196, 166, 0.8274509804);
   align-items: center;
   border-radius: 3px;
   padding-left: 20px;
   padding-top: 25px;
   padding-bottom: 25px;
   padding-top: 30px;
-  
-  
-
 }
-
-  
-
-
-.navbarlink{ background-color: #cfc5af; 
+.navbar .navbarlink {
+  background-color: #cfc5af;
   text-decoration: none;
   margin-left: 20px;
   margin-right: 20px;
   border-top: solid 3px rgb(75, 73, 62);
   border-bottom: solid 10px #383827;
-  border-left: solid 3px#3a3434;
-  border-right:solid 3px #413d3d;
+  border-left: solid 3px #3a3434;
+  border-right: solid 3px #413d3d;
   border-radius: 8px;
-  padding: 10px 10px 10px 10px ;
+  padding: 10px 10px 10px 10px;
   gap: 10px;
-
-}
-
-.navbarlink  { display: flex;
+  display: flex;
   padding-left: 50px;
-  margin: 3px 300px;   
+  margin: 3px 300px;
 }
-
-
-.navbar-toggler:hover {
- font-size: 30px;
- border: solid 3px #e9d981;
- border-radius: 3%; 
- transition: 0.3s;
- filter: contrast(65);
- font-size: 33px;
- 
+.navbar .navbarlink:hover {
+  background-color: rgba(235, 217, 191, 0.6509803922);
+  font-size: 29px;
+  color: #252420;
+  padding-left: 400px;
+  padding-right: 300px;
+  margin-top: 7px;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  transition: 0.7s;
 }
-.linkindex {   background-color: #cfc5af; 
+.navbar .linkindex {
+  background-color: #cfc5af;
   text-decoration: none;
   margin-bottom: 10px;
   margin-left: 0px;
   margin-right: 20px;
   border-top: solid 3px rgb(75, 73, 62);
   border-bottom: solid 10px #383827;
-  border-left: solid 3px#3a3434;
-  border-right:solid 3px #413d3d;
-  border-radius: 8px; 
-  padding: 5px 10px;
-
-}
-.linkindex:hover { background-color:  #ebd9bfa6;
-  font-size: 29px; 
-  color:#252420;
-  padding-left: 80px;
-  padding-right: 80px ;
-  margin-top: 7px;
-  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-  transition: 0.8s;
-
-}
-
-.navbarlink:hover { background-color:  #ebd9bfa6;
-  font-size: 29px;
-  color:#252420;
- padding-left: 400px;
- padding-right: 300px ;
- margin-top: 7px;
- font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
- transition: 0.7s;
-}
-
-@media (max-width:1300px) { .navbar {display: flex;
-  margin: 0px 0px; 
-  padding: 10px 2px;
-
-}
-.navbarlink{display: flex;
-    margin: 0px 0px; 
-    padding: 10px 5px;
-
-}    
-}
-
-
-
-@media (max-width:900px) {
-  .navbarlink { width: 70%;
-    font-size: 15px;
-    padding-left: 5px;
-    padding-right: 5px;
-  }
- .navbarlink:hover{ font-size: 25px; 
-    padding-left: 50px;
-    padding-right: 15px;
-    width: 85%;
-   transition: 0.3s;
-  }
-  .linkindex:hover{ font-size: 20px;
-      transition: 0.3s;
-
-  }
-}
-
-
-/** ACA TERMINA EL NAVBAR (FUERA DEL INDEX)**/ 
-
-
-
-a { color: rgb(155, 103, 5);
-  font-size: 25px;
- text-align: center;
-}
-
-.footer a:hover { background-color: #8a7968; 
-color: #fcfaf4;
-border: 5px solid #a87844;
-border-radius: 15px;
-padding: 6px 3px;
-transition: 0.3s;
-
-
-}
-
-/**ACA TERMINA EL FOOTER **/ 
-
-/* ACA EMPIEZA HTML QUE ES EL AIRSOFT */ 
-
-.top-navigation {background-color: #cfc5af; 
-  text-decoration: none;
-  margin-left: 20px;
-  margin-right: 20px;
-  border-top: solid 3px rgb(75, 73, 62);
-  border-bottom: solid 10px #383827d7;
-  border-left: solid 3px#3a3434;
-  border-right:solid 3px #413d3d;
+  border-left: solid 3px #3a3434;
+  border-right: solid 3px #413d3d;
   border-radius: 8px;
-  padding: 10px 10px 10px 10px ;
-  font-size: 15px;
-  
- }
-.top-navigation:hover { font-size: 20px;
-  padding-left: 15px;
-  margin-left: 20px;
-   transition: 0.4s;
+  padding: 5px 10px;
 }
-
-#textocomoseorigino { background-color: #F1D3B3;
+.navbar .linkindex:hover {
+  font-size: 29px;
+  color: #252420;
+  padding-left: 80px;
+  padding-right: 80px;
+  margin-top: 7px;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  transition: 0.8s;
+}
+.navbar .navbar-toggler:hover {
+  font-size: 30px;
+  border: solid 3px #e9d981;
+  border-radius: 3%;
+  transition: 0.3s;
+  filter: contrast(65);
   font-size: 33px;
 }
-
-/*ACA TERMINA HTML QUE ES EL AIRSOFT  */ 
-
-/*ACA EMPIEZA HTML MAPA DONDE JUGAR */ 
-
-.mapa {
-  text-align: center ;
-  
-}
-body { padding: 0px 0px;
-  background-image: url("https://wallpapers.com/images/featured/camo-b4jyfziypywrtbbz.jpg");
-  background-size: 110%;
+.navbar a {
+  color: rgb(155, 103, 5);
+  font-size: 25px;
+  text-align: center;
 }
 
-
-
-
-#linkmapa {
-  margin: 0px;
-  box-shadow: 5px 5px 6px 5px #3a3434;
-  width: 200%;
- box-sizing: border-box ;
- color: rgb(155, 103, 5) ;
-  font-size: 30px;
-  padding: 10px 15px;
+/**ACA EMPIEZA QUE ES EL AIRSOFT **/
+/** esta parte esta tambien en el html de mapa h3 texto-tipo **/
+.texto-tipo {
+  margin: 0;
+  background-color: #F1D3B3;
+  color: #0f0e0d;
+  font-family: Georgia, Times, "Times New Roman", serif;
+  font-size: 40px;
+  padding-top: 0px;
+  padding-left: 10px;
+  padding-bottom: 30px;
+  border-radius: 7px;
+  text-align: center;
+  margin-bottom: 0;
+  /** con este condicional estoy dando modo oscuro a la mayoria de los textos principales de los html **/
+  background-color: rgba(99, 81, 62, 0.7803921569);
+  color: #ffffff;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-size: 38px;
+}
+.texto-tipo p:hover {
+  font-size: 45px;
+  color: #ffffff; /**lo voy a cambiar a blanco por el modo oscuro **/
+  border-radius: 3% solid;
+  transition: 0.3s;
+}
+.texto-tipo h3 {
   background-color: #BBAB8C;
- 
-  color: rgb(155, 103, 5) ;
- 
-  text-decoration: none;
- 
- border-top: solid 7px rgb(110, 110, 105);
- border-bottom: solid 10px #35352c;
- border-left: solid 7px#3a3737;
- border-right:solid 7px #35342d;
-border-radius: 8px;
-padding: 10px 10px 10px 10px ;
-}
-
-.mapa-iframe {  margin-top: 35px; 
-  margin-left: 5px;
-  margin-right: 5px;
-  margin-bottom: 0px;
-}
-
-.mapa h3 { 
-  background-color: #BBAB8C;
- box-sizing: border-box ;
- color: rgb(155, 103, 5) ;
+  box-sizing: border-box;
+  color: rgb(155, 103, 5);
   font-size: 35px;
   padding: 10px 15px;
-
- 
   text-decoration: none;
   margin-left: 30px;
   margin-right: 30px;
   border-top: solid 7px rgb(75, 73, 62);
- border-bottom: solid 10px #383827;
- border-left: solid 7px#3a3434;
- border-right:solid 7px #413d3d;
-border-radius: 8px;
-padding: 10px 10px 10px 10px ;
+  border-bottom: solid 10px #383827;
+  border-left: solid 7px #3a3434;
+  border-right: solid 7px #413d3d;
+  border-radius: 8px;
+  padding: 10px 10px 10px 10px;
 }
-
-#textomapa { background-color: #FAEED1;
+.texto-tipo .titulo {
+  margin-bottom: 25px;
+  margin-top: 0px;
+  font-size: 50px;
+  text-align: center;
+  color: #fcf9ee;
+  background-color: #5D5241;
+  box-shadow: 2px 10px 3px #928269;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+.texto-tipo #textocomoseorigino {
+  background-color: #F1D3B3;
   font-size: 33px;
+  margin: 0px 0px;
+  padding: 5px 15px;
+  background-color: rgba(99, 81, 62, 0.7803921569);
+  color: #ffffff;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-size: 38px;
 }
 
-.fotoPrincipal { text-align: center;
-        margin-bottom: 1px;
-        margin-left: 10px;
-        margin-right: 10px;
-}
-
-/**ACA EMPIEZA TIPO MARCADORAS **/ 
-
-.grilla-tipoMarcadoras { 
-  padding:  10px 100px ;
-  margin: 100px 0px ; 
+/**ACA EMPIEZA EL HTML DE CONTACTO **/
+.grilla-contacto {
+  color: #fcf9ee;
+  font-size: 33px;
   display: grid;
-   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-   grid-template-columns: 1fr 1fr 1fr 1fr;
-   grid-template-rows: 1fr 200px ;
-   gap:  15px 5px;
-   grid-template-areas: 
-  ' a1 a2 a3 a4 '
-
-  'a5 a6 a7 a8' 
- ;}
-
-
-
-
-
-
-
-  
-.box-tipoMarcadoras { width: 400px;
-  height: 400px;
-border: 5px solid rgb(122, 89, 44) ; 
-justify-content:  center;
-align-items: center;
-display: flexbox;
-border-radius: 10px;
-margin: 0px;
+  grid-template-columns: 1fr 1fr;
+  grid-template-areas: "a1 a2";
+  gap: 0px;
+}
+.grilla-contacto .contacto {
+  display: flexbox;
+  width: 100%;
+  height: 100%;
+  border: 7px solid rgba(71, 70, 12, 0.877);
+}
+.grilla-contacto .contacto:hover {
+  box-shadow: 15px 14px 15px 15px #494444;
+}
+.grilla-contacto .contacto .c2 {
+  text-decoration: none;
+}
+.grilla-contacto .contacto img {
+  object-fit: cover;
+  height: 100%;
+  width: 100%;
+  padding-right: 0px;
+}
+.grilla-contacto .contacto .Rimba {
+  background-color: #383827;
+  color: #FAEED1;
+  display: flex;
+  position: absolute;
+  bottom: 455px;
+  right: 5px;
+  font-size: 60px;
+  border: solid 7px #2b240a;
+  border-radius: 15%;
 }
 
+.c1 {
+  background-image: url(https://images.unsplash.com/photo-1665065769045-159f8ecf5016?q=80&w=1933&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+  background-size: 120%;
+  height: 100%;
+  width: 98%;
+  padding-left: 55px;
+}
+.c1 form {
+  display: flex;
+  flex-direction: column;
+  justify-self: center;
+  font-size: 10px;
+  grid-area: form;
+  gap: 10px;
+}
+.c1 label {
+  font-size: 25px;
+  padding-bottom: 30px;
+}
+.c1 input, .c1 textarea {
+  width: 400px;
+  color: #080808;
+  font-size: 15px;
+  background-color: #e4ddcf;
+  padding: 3px 5px;
+}
 
+/**ACA TERMINA EL HTML DE CONTACTO **/
+/** me falta index la imagen del carrusel **/
+.container-index .img-carrousel {
+  max-width: 100%;
+  max-height: 100%;
+  margin: 0px;
+  padding: 0px;
+  object-fit: fill;
+}
+.container-index button:hover {
+  background-color: rgba(173, 173, 164, 0.4509803922);
+  border: solid 5px rgba(196, 183, 113, 0.3882352941);
+}
 
-.box-tipoMarcadoras:hover {  
-  background-color: #aca9a4c0;
-  border: 5px solid #9b702aef ; 
+/** imagenes index pistolas , run , equipamiento **/
+.card-body {
+  background-color: #e0d9cd;
+  border: solid 3px rgba(65, 65, 48, 0.8901960784);
+  border-radius: 3px;
+}
+.card-body .card-title {
+  padding-left: 0px;
+  text-shadow: #5a4423;
+  border: solid 1px rgba(43, 42, 41, 0.5254901961);
+  margin-right: 300px;
+  padding: 3px 10px;
+  padding-left: 35px;
+  border-radius: 5px;
+  justify-content: center;
+}
+.card-body a:hover {
+  font-size: 20px;
+  margin-left: 50px;
+  transition: 0.5s;
+  box-shadow: #3a3434 3px 2px 1px 3px;
+}
+
+/** termino index **/
+/** ACA EMPIEZA EL HTML DE MAPA DONDE JUGAR **/
+.grilla-mapa {
+  padding-bottom: 30px;
+  padding-left: 30px;
+  padding-right: 30px;
+  margin-top: 0px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  gap: 25px;
+  grid-template-areas: "mapa1 mapa2 mapa3 " "mapa5 mapa6  mapa7";
+}
+.grilla-mapa .mapa {
+  text-align: center;
+  border: solid 5px #4e3919;
+  display: flexbox;
+  padding: 0px;
+  background-color: rgba(222, 208, 182, 0.2196078431);
+}
+.grilla-mapa .mapa iframe {
+  margin-top: 35px;
+  margin-left: 5px;
+  margin-right: 5px;
+  margin-bottom: 0px;
+}
+.grilla-mapa .mapa:hover {
+  background-color: rgba(240, 225, 191, 0.4392156863);
+  border-radius: 3%;
+  box-shadow: 5px 5px 9px 10px;
+}
+.grilla-mapa .mapa .m1 {
+  grid-area: mapa1;
+}
+.grilla-mapa .mapa h3 {
+  background-color: rgba(136, 113, 79, 0.8980392157);
+  box-sizing: border-box;
+  color: rgb(29, 22, 10);
+  font-size: 35px;
+  padding: 10px 15px;
+  text-decoration: none;
+  margin-left: 30px;
+  margin-right: 30px;
+  border-top: solid 7px rgb(75, 73, 62);
+  border-bottom: solid 10px #383827;
+  border-left: solid 7px #3a3434;
+  border-right: solid 7px #413d3d;
+  border-radius: 8px;
+  padding: 10px 10px 10px 10px;
+  color: #fcfaf4;
+  font-family: "Times New Roman", Times, serif;
+  font-size: 50px;
+  text-align: center;
+}
+.grilla-mapa .mapa h3:hover {
+  background-color: rgb(122, 89, 44);
+}
+.grilla-mapa .mapa .mapa-link {
+  justify-content: center;
+}
+.grilla-mapa .mapa .mapa-link #linkmapa {
+  margin: 0px 100px;
+  box-shadow: 5px 5px 6px 5px #3a3434;
+  width: 200%;
+  box-sizing: border-box;
+  color: rgb(155, 103, 5);
+  font-size: 30px;
+  padding: 10px 15px;
+  background-color: #BBAB8C;
+  text-decoration: none;
+  border-top: solid 7px rgb(110, 110, 105);
+  border-bottom: solid 10px #35352c;
+  border-left: solid 7px #3a3737;
+  border-right: solid 7px #35342d;
+  border-radius: 8px;
+  padding: 10px 10px 10px 10px;
+}
+.grilla-mapa .mapa .mapa-link #linkmapa:hover {
+  background-color: rgba(122, 89, 44, 0.767);
+  color: aliceblue;
+  box-shadow: 5px 5px 10px 10px #3a3434;
+  width: 200%;
+  text-decoration: none;
+  box-sizing: border-box;
+  font-size: 43px;
+  padding: 10px 15px;
+  box-sizing: border-box;
+  margin-left: 20px;
+  margin-right: 20px;
+  border-top: solid 3px rgb(75, 73, 62);
+  border-bottom: solid 10px #383827;
+  border-left: solid 3px #3a3434;
+  border-right: solid 3px #413d3d;
+  border-radius: 8px;
+  padding: 10px 10px 10px 10px;
+  text-decoration: underline;
+}
+
+/**ACA TERMINA EL HTML DE DONDE JUGAR MAPA  **/
+/**ACA EMPIEZA TIPO MARCADORAS **/
+.grilla-tipoMarcadoras {
+  padding: 10px 100px;
+  margin: 100px 0px;
+  display: grid;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 200px;
+  gap: 15px 5px;
+  grid-template-areas: " a1 a2 a3 a4 " "a5 a6 a7 a8";
+}
+.grilla-tipoMarcadoras .box-tipoMarcadoras {
+  width: 400px;
+  height: 400px;
+  border: 5px solid rgb(122, 89, 44);
+  justify-content: center;
+  align-items: center;
+  display: flexbox;
+  border-radius: 10px;
+  margin: 0px;
+}
+.grilla-tipoMarcadoras .box-tipoMarcadoras:hover {
+  background-color: rgba(172, 169, 164, 0.7529411765);
+  border: 5px solid rgba(34, 25, 12, 0.937254902);
   box-shadow: 10px 10px 10px 8px #5D5241;
 }
-.titulobox-tipoMarcadoras:hover{ background-color:#5a4423 ; 
-  filter:hue-rotate(26)
-}
-
-.textometros:hover { background-color: #5a4423; 
-  font-size: 25px;
-padding-left: 10px;
-}
-
-
-
-.box-tipoMarcadoras img {
+.grilla-tipoMarcadoras .box-tipoMarcadoras img {
   height: 100%;
   width: 100%;
   object-fit: fill;
 }
-.box-tipoMarcadoras img:hover { width: 105%; 
+.grilla-tipoMarcadoras .box-tipoMarcadoras img:hover {
+  width: 105%;
   height: 105%;
-  border: 5px solid #9b702aef ; 
-  box-shadow: 8px 7px 8px 7px  #3d362be1;
+  border: 5px solid rgba(138, 100, 39, 0.6980392157);
+  box-shadow: 8px 7px 8px 7px rgba(61, 54, 43, 0.8823529412);
+  transition: 0.3s;
 }
-
-.textobox-tipoMarcadoras { padding: 10px 30px;
-  height: 180px;
-  background-color: #BBAB8C;
-  color: #fcf9ee; 
-  overflow: auto;
-} 
-
-.textobox-tipoMarcadoras:hover {  background-color: #dbaf6ba4; 
-  font-size: 25px;
-text-align: center; 
-overflow: auto;
-
-}
-
-.titulobox-tipoMarcadoras { text-align: center;
+.grilla-tipoMarcadoras .titulobox-tipoMarcadoras {
+  text-align: center;
   padding: 3px 2px;
   font-size: 25px;
   background-color: #464242;
   color: #fcf9ee;
   text-decoration: 3px overline;
-align-self: start;
-
+  align-self: start;
 }
- 
-.textometros {  background-color: #928269;
+.grilla-tipoMarcadoras .titulobox-tipoMarcadoras.titulobox-tipoMarcadoras:hover {
+  background-color: rgba(73, 68, 57, 0.9176470588);
+  filter: hue-rotate(26);
+}
+.grilla-tipoMarcadoras .textometros {
+  background-color: #928269;
   color: #DED0B6;
   align-self: end;
   padding: 8px 4px;
-  
 }
-
-
-.b1 { order: 0;}
-.b5 .circulo { margin-top: 5px ;
+.grilla-tipoMarcadoras .textometros.textometros:hover {
+  background-color: #5a4423;
+  font-size: 25px;
+  padding-left: 10px;
+}
+.grilla-tipoMarcadoras .textobox-tipoMarcadoras {
+  padding: 10px 30px;
+  height: 180px;
+  background-color: #BBAB8C;
+  color: #fcf9ee;
+  overflow: auto;
+}
+.grilla-tipoMarcadoras .textobox-tipoMarcadoras.textobox-tipoMarcadoras:hover {
+  background-color: rgba(219, 175, 107, 0.6431372549);
+  font-size: 25px;
+  text-align: center;
+  overflow: auto;
+}
+.grilla-tipoMarcadoras .b1 {
+  order: 0;
+}
+.grilla-tipoMarcadoras .b5 .circulo {
+  margin-top: 5px;
   margin-left: 10px;
   width: 35Px;
   height: 35px;
@@ -546,20 +517,20 @@ align-self: start;
   position: absolute;
   order: 5;
 }
-
-.b6 .circulo { margin-top: 5px ;
+.grilla-tipoMarcadoras .b6 .circulo {
+  margin-top: 5px;
   margin-left: 10px;
   width: 35Px;
   height: 35px;
   background-color: green;
   border-radius: 3px black;
   border-radius: 50%;
-  align-self: start ;
+  align-self: start;
   align-items: center;
   position: absolute;
 }
-
-.b7 .circulo {margin-top: 5px ;
+.grilla-tipoMarcadoras .b7 .circulo {
+  margin-top: 5px;
   margin-left: 10px;
   width: 35Px;
   height: 35px;
@@ -568,12 +539,10 @@ align-self: start;
   border-radius: 50%;
   align-self: self-start;
   align-items: center;
-  position: absolute; 
+  position: absolute;
 }
-
-
-.b8 .circulo { 
-  margin-top: 5px ;
+.grilla-tipoMarcadoras .b8 .circulo {
+  margin-top: 5px;
   margin-left: 10px;
   width: 35Px;
   height: 35px;
@@ -585,443 +554,338 @@ align-self: start;
   position: absolute;
 }
 
-
-
-
-@media (max-width:1750px) {
-  .grilla-tipoMarcadoras { display: flex ;  
- flex-direction: column; 
- gap: 10px;
- align-items: center;
- justify-content: flex-start;
-
- ; 
-  }
- 
-  .b1 { 
-     order: 1;} 
-  .b5 { 
-     order: 2 ;}
-  .b2 { 
-     order: 3}
-  .b6 {
-     order:4;}
-  .b3 {
-     order:5;}
-  .b7 {
-      order:6;}
-  .b4 {
-     order:7;}
-  .b8 {
-     order: 8;}
-
-   
-  }
-
-@media (max-width:950px) {
-  .grilla-tipoMarcadoras { display: flex ;  
- flex-direction: column; 
- gap: 10px;
- align-items: center;
- justify-content: flex-start;
-
- ; 
-  }
- 
-  .b1 { 
-     order: 1;} 
-  .b5 { 
-     order: 2 ;}
-  .b2 { 
-     order: 3}
-  .b6 {
-     order:4;}
-  .b3 {
-     order:5;}
-  .b7 {
-      order:6;}
-  .b4 {
-     order:7;}
-  .b8 {
-     order: 8;}
- 
-  }
- 
-  
-
-
-/** HASTA ACA TERMINA EL CSS DE HTML DE TIPO-MARCADORAS**/
-
-
-/**ACA EMPIEZA EL HTML DE CONTACTO **/ 
-.grilla-contacto  { color: #fcf9ee  ; 
-  font-size: 33px ;
-  display: grid;
-  grid-template-columns: 1fr 1fr ;
-grid-template-areas: 'a1 a2' ; 
-gap: 0px;
-
+/** aca termina HTML TIPO MARCADORAS  **/
+/**ACA EMPIEZA EL HTML DE DISTINTOS TIPOS DE PARTIDAS**/
+body {
+  padding: 0px 0px;
+  background-image: url("https://wallpapers.com/images/featured/camo-b4jyfziypywrtbbz.jpg");
+  background-size: 110%;
 }
 
-.c1 {
-  background-image: url(https://images.unsplash.com/photo-1665065769045-159f8ecf5016?q=80&w=1933&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
-  background-size: 120%;
-  height: 100%;
-  width: 98%;
-  padding-left: 55px;
-
-  
-}
-@media (max-width:950px)
-{
-  .grilla-contacto { display: flex;
-  flex-direction: column;
-  padding-bottom: 20px;
-  gap: 3px;
-object-fit: cover;}
-  .input { width: 250px; }
-  .form { width: 600px;
-  
-  }
-  .textarea { margin-left: 0px;
-      width:400px; 
-             height: 300px;}
-  .c1 { height: 20px;
-    
-
-  } 
-
-}
-
-
-
-
-
-.contacto { display: flexbox; 
-width: 100%;
-height: 100%;
-border:  7px solid rgba(71, 70, 12, 0.877);
-
-}
-
-
-
-
-.contacto img {  object-fit: fill;
-  height: 100%;
-  width: 100%;
-  padding-right: 0px;
-   }
-
-.contacto:hover { 
-  box-shadow: 15px 14px 15px 15px #494444;
-
-}
-
-
-.c2 p { background-color: #383827;
-  color: #FAEED1;
-  display: flex;
-  position: absolute;
-  bottom:  455px ; 
-  right: 5px;
-  font-size: 60px;
-  border:solid 7px #2b240a;
-  border-radius: 15% ; 
- 
-
-}
-@media (max-width:950px)
-{
-.c2 p   { position: absolute;
-  bottom:  105px ; 
-  right: 5px;
-  font-size: 50px;
-  border:solid 7px #2b240a;
-  border-radius: 15% ; 
- 
-
-
-}}
-
-
-form { display: flex;
-flex-direction: column ;
-justify-self: center;
-font-size: 10px;
-grid-area: form;
-gap: 10px;
-
-}
-
-form label  {
-  font-size: 25px;
-  padding-bottom: 30px;
-}
-
-form input ,textarea { width: 400px;
-  color: #080808;
-  font-size: 15px; 
-  background-color: #e4ddcf;
-  padding:  3px  5px;
-}
-
-/**ACA TERMINA EL HTML DE CONTACTO **/
-
-
-/** ACA EMPIEZA EL HTML DE MAPA DONDE JUGAR **/ 
-
-
-
-.grilla-mapa { padding-bottom: 30px;
-  padding-left: 30px;
-  padding-right: 30px;
+main .titulo {
+  margin-bottom: 25px;
   margin-top: 0px;
-  display: grid;
-  grid-template-columns: 1fr 1fr  1fr ;
-  grid-template-rows: 1fr 1fr ;
-  gap: 25px;
-   grid-template-areas:'mapa1 mapa2 mapa3 '
-  'mapa5 mapa6  mapa7' 
-  ;
- 
-
-}
-
-
- 
-
-@media (max-width:1850px) { 
-   .grilla-mapa { display: flex;
-      flex-direction: column;
-      gap: 15px;
-
-  }
-
-  
-}
-
-#linkmapa {
-  margin: 0px;
-  box-shadow: 5px 5px 6px 5px #3a3434;
-  width: 200%;
-  box-sizing: border-box ;
-  font-size: 30px;
-  padding: 10px 15px;
-  background-color: #BBAB8C;
-  color: rgb(155, 103, 5) ;
-  text-decoration: none;
-  border-top: solid 7px rgb(110, 110, 105);
-  border-bottom: solid 10px #35352c;
-  border-left: solid 7px#3a3737; 
-  border-right:solid 7px #35342d;
-  border-radius: 8px;
-  padding: 10px 10px 10px 10px ;
-}
-
-.mapa-iframe {  margin-top: 35px; 
-  margin-left: 5px;
-  margin-right: 5px;
-  margin-bottom: 0px;
-}
-
-.mapa h3 { 
-  background-color: #88714fe5;
- box-sizing: border-box ;
- color: rgb(155, 103, 5) ;
-  font-size: 35px;
-  padding: 10px 15px;
-
- 
-  text-decoration: none;
-  margin-left: 30px;
-  margin-right: 30px;
-  border-top: solid 7px rgb(75, 73, 62);
-  border-bottom: solid 10px #383827;
-  border-left: solid 7px#3a3434;
-  border-right:solid 7px #413d3d;
-  border-radius: 8px;
-  padding: 10px 10px 10px 10px ;
-  color: #fcfaf4;
-  font-family: 'Times New Roman', Times, serif;
   font-size: 50px;
-}
-
-
-
-
-.mapa { border: solid 5px  #4e3919;
-  display: flexbox;
-  padding: 0px; 
- background-color: #ded0b638;
-}
-.m1 {
-   grid-area: mapa1 ;
-  
-}
-.mapa iframe { width: 91%;
-  grid-template-columns: auto;
-  }
-
-.mapa:hover {
-  background-color: #f0e1bf70;
-  border-radius: 3%;
-  box-shadow: 5px 5px 9px 10px;
-  
-
-}
-
-.mapa h3:hover { background-color:rgb(122, 89, 44);
-
-
-}
-
-#linkmapa:hover  { background-color:rgba(122, 89, 44, 0.767);
- 
-  margin: 50px;
-  box-shadow: 5px 5px 10px 10px #3a3434;
-  width: 200%;
- 
- box-sizing: border-box ;
- color: rgb(155, 103, 5) ;
-  font-size: 43px;
-  padding: 10px 15px;
-  background-color: #BBAB8C;
-  box-sizing: border-box ;
-  color: rgb(155, 103, 5) ;
- 
-  text-decoration: none;
- 
-  border-top: solid 7px rgb(75, 73, 62);
- border-bottom: solid 10px #383827;
- border-left: solid 7px#3a3434;
- border-right:solid 7px #413d3d;
-border-radius: 8px;
-padding: 10px 10px 10px 10px ;
-}
-
-#linkmapa:hover { background-color:rgba(122, 89, 44, 0.74);
-
-  color: aliceblue;
-   text-decoration: none;
-   margin-left: 20px;
-   margin-right: 20px;
-   border-top: solid 3px rgb(75, 73, 62);
-  border-bottom: solid 10px #383827;
-  border-left: solid 3px#3a3434;
-  border-right:solid 3px #413d3d;
-border-radius: 8px;
-padding: 10px 10px 10px 10px ;
-text-decoration: underline;
-}
-@media (max-width:850px) {
-  #linkmapa  { font-size:25px ;
-            margin: 0px ;
-            padding: 2px 2px;}
-
-}
-/**ACA TERMINA EL HTML DE DONDE JUGAR MAPA  **/
-
-/**ACA EMPIEZA EL HTML DE DISTINTOS TIPOS DE PARTIDAS**/ 
-
-
-.texto-tipo {
-  
-  
-  margin: 0;
- 
-  background-color: #F1D3B3;
-  color: #0f0e0d; 
-  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif ;
-  font-size: 40px; 
-  padding-top: 0px;
-  padding-left: 10px;
-  padding-bottom: 30px;
-  border-radius: 7px ;
   text-align: center;
-  margin-bottom: 0;
-}
-.texto-tipo img { width: 1200px;
-  width: 1200px;} 
-.texto-tipo p:hover { font-size: 50px;
-  color: #080808;
- border-radius: 3% solid ;
-  
-
+  color: #fcf9ee;
+  background-color: #5D5241;
+  box-shadow: 2px 10px 3px #928269;
+  padding-top: 10px;
+  padding-bottom: 10px;
 }
 
-.tipos-partidas{ display: grid;
+.tipos-partidas {
+  display: grid;
   grid-template-columns: 1fr 1fr;
- grid-template-rows: 1fr 1fr  100%;
- gap: 10px;
-
-  
-     
+  grid-template-rows: 1fr 1fr 100%;
+  gap: 10px;
 }
-
-
-@media (max-width:950px) {
-  .tipos-partidas  { display: flex;
-      flex-wrap: row;
-      flex-wrap:wrap ;
-      margin: 0px;
-      
-  }
-.texto-tipo img{ width: 400px;
-  height: 200px;}
-
-}
-.textopartidas { 
-  color: #252420;
-  background-color: #FAEED1;
-  box-shadow: 5px 10px  1px  #8a7968 ;
-}
-.textopartidas p { margin: 0px;
-  max-width: 100%;
-  padding: 5px 15px;
-}
-.box-tipopartidas { border: solid 5px  #e9c28975;
+.tipos-partidas .box-tipopartidas {
+  border: solid 5px rgba(233, 194, 137, 0.4588235294);
   display: flexbox;
   padding: 0px 0px;
   border-radius: 5px;
- background-color: #a19a92d5 ; 
-
- 
+  background-color: rgba(161, 154, 146, 0.8352941176);
 }
-
-.h2{ background-color: #F1D3B3;
+.tipos-partidas .box-tipopartidas .h2 {
+  background-color: #F1D3B3;
   font-size: 33px;
   padding: 10px 5px;
   text-align: center;
-  color: #11100f75;
+  color: rgba(17, 16, 15, 0.4588235294);
 }
-
-.box-tipopartidas:hover { border: solid 10px  #fcd08eaf;
+.tipos-partidas .box-tipopartidas:hover {
+  border: solid 10px rgba(252, 208, 142, 0.6862745098);
   display: flex;
   box-shadow: inset 5px 1px 20px 5px;
   border-radius: 5px;
- background-color: #858382d5 ; 
- transition: 0.2s;
-
-
+  background-color: rgba(133, 131, 130, 0.8352941176);
+  transition: 0.2s;
+}
+.tipos-partidas .box-tipopartidas .textopartidas {
+  color: #252420;
+  background-color: #FAEED1;
+  box-shadow: 5px 10px 1px #8a7968;
+}
+.tipos-partidas .box-tipopartidas .textopartidas p:hover {
+  margin: 10px;
+  background-color: #cfc5af;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 20px;
+  transition: 0.3s;
+}
+.tipos-partidas .box-tipopartidas .textopartidas p {
+  margin: 0px;
+  max-width: 100%;
+  padding: 5px 15px;
 }
 
-.textopartidas p:hover { margin: 10px;
-  
-  background-color: #cfc5afbe; 
-font-family: Verdana, Geneva, Tahoma, sans-serif; 
-font-size: 20px;
-transition: 0.3s;
+@media (max-width: 950px) {
+  .tipos-partidas {
+    display: flex;
+    flex-wrap: row;
+    flex-wrap: wrap;
+    margin: 0px;
+  }
+  .texto-tipo img {
+    width: 400px;
+    height: 200px;
+  }
 }
-
-
-@media (max-width:1250px) {   
-.card-group {display: grid; 
-  grid-template-columns: 1fr ;
-  
+@media (max-width: 1250px) {
+  .card-group {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
 }
-}
-
-
-
 /** ACA TERMINA EL HTML TIPO DE PARTIDAS **/
+/** MEDIA DE NAVBARINDEX **/
+@media (max-width: 1450px) {
+  .navbarindex {
+    background-color: rgba(153, 141, 89, 0.8156862745);
+    display: flexbox;
+    flex-direction: row;
+    margin: 0px 0px;
+    padding: 10px 30px;
+    font-size: 10px;
+    gap: 3px;
+  }
+  .navbarlinkindex {
+    padding: 5px 5px;
+    margin: 0px 25px;
+    font-size: 15px;
+    color: #5a4423;
+  }
+  .navbarlinkindex:hover {
+    font-size: 20px;
+    padding: 8px 10px;
+    transition: 0.3s;
+    text-decoration: underline;
+    border-top: solid 3px rgba(56, 56, 39, 0.7254901961);
+    border-left: solid 3px rgba(56, 56, 39, 0.7254901961);
+    border-right: solid 5px rgba(56, 56, 39, 0.7254901961);
+    border-bottom: solid 8px rgba(56, 56, 39, 0.7254901961);
+    color: #0f0e0d;
+  }
+}
+@media (max-width: 900px) {
+  .navbarindex {
+    background-color: rgba(153, 141, 89, 0.8156862745);
+    display: flexbox;
+    flex-direction: column;
+    margin: 0px 0px;
+    padding: 10px 2px;
+    font-size: 10px;
+    gap: 3px;
+  }
+  .navbarlinkindex {
+    padding: 5px 15px;
+    margin: 0px 15px;
+    font-size: 15px;
+    color: #5a4423;
+  }
+  .navbarlinkindex:hover {
+    font-size: 20px;
+    padding: 8px 10px;
+    transition: 0.3s;
+    text-decoration: underline;
+    border-top: solid 3px rgba(56, 56, 39, 0.7254901961);
+    border-left: solid 3px rgba(56, 56, 39, 0.7254901961);
+    border-right: solid 5px rgba(56, 56, 39, 0.7254901961);
+    border-bottom: solid 8px rgba(56, 56, 39, 0.7254901961);
+    color: #0f0e0d;
+  }
+}
+/**MEDIA DE NAVBAR HTMLS ¿ porque no me lo toma?**/
+@media (max-width: 1300px) {
+  .navbar {
+    display: flex;
+    margin: 0px 0px;
+    padding: 10px 2px;
+  }
+  .navbarlink {
+    display: flex;
+    margin: 0px 0px;
+    padding: 10px 5px;
+  }
+}
+@media (max-width: 900px) {
+  .navbarlink {
+    width: 70%;
+    font-size: 15px;
+    padding-left: 5px;
+    padding-right: 5px;
+  }
+  .navbarlink:hover {
+    font-size: 25px;
+    padding-left: 50px;
+    padding-right: 15px;
+    width: 85%;
+    transition: 0.3s;
+  }
+  .linkindex:hover {
+    font-size: 20px;
+    transition: 0.3s;
+  }
+}
+/** INDEX **/
+@media (max-width: 1450px) {
+  .card-title {
+    padding: 3px 2px;
+    width: 300px;
+  }
+}
+@media (max-width: 850px) {
+  .card-title {
+    padding: 3px 2px;
+    width: 200px;
+  }
+}
+/** MEDIA DE QUE ES EL AIRSOFT 1 HTML **/
+/** MEDIA DE TIPOS DE MARCADORAS **/
+@media (max-width: 1750px) {
+  .grilla-tipoMarcadoras {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+    justify-content: flex-start;
+  }
+  .b1 {
+    order: 1;
+  }
+  .b5 {
+    order: 2;
+  }
+  .b2 {
+    order: 3;
+  }
+  .b6 {
+    order: 4;
+  }
+  .b3 {
+    order: 5;
+  }
+  .b7 {
+    order: 6;
+  }
+  .b4 {
+    order: 7;
+  }
+  .b8 {
+    order: 8;
+  }
+}
+@media (max-width: 950px) {
+  .grilla-tipoMarcadoras {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+    justify-content: flex-start;
+  }
+  .b1 {
+    order: 1;
+  }
+  .b5 {
+    order: 2;
+  }
+  .b2 {
+    order: 3;
+  }
+  .b6 {
+    order: 4;
+  }
+  .b3 {
+    order: 5;
+  }
+  .b7 {
+    order: 6;
+  }
+  .b4 {
+    order: 7;
+  }
+  .b8 {
+    order: 8;
+  }
+}
+/**MEDIA TIPO PARTIDAS 3ER HTML **/
+@media (max-width: 950px) {
+  .tipos-partidas {
+    display: flex;
+    flex-wrap: row;
+    flex-wrap: wrap;
+    margin: 0px;
+  }
+  .texto-tipo img {
+    width: 400px;
+    height: 200px;
+  }
+}
+@media (max-width: 1250px) {
+  .card-group {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+}
+/** MEDIA LUGARES DONDE JUGAR MAPA  4TO HTML   **/
+@media (max-width: 1850px) {
+  .grilla-mapa {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+  iframe {
+    max-width: 90%;
+    min-height: 90%;
+  }
+}
+@media (max-width: 850px) {
+  #linkmapa {
+    font-size: 5px;
+    margin: 0px;
+    padding: 2px 2px;
+  }
+  iframe {
+    max-width: 90%;
+    min-height: 90%;
+  }
+}
+/** MEDIA CONTACTO HTML 5 **/
+@media (max-width: 950px) {
+  .grilla-contacto {
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 20px;
+    gap: 3px;
+    object-fit: cover;
+  }
+  .input {
+    width: 250px;
+  }
+  .form {
+    width: 600px;
+  }
+  .textarea {
+    margin-left: 0px;
+    width: 400px;
+    height: 300px;
+  }
+  .c1 {
+    height: 20px;
+  }
+}
+@media (max-width: 950px) {
+  .Rimba {
+    display: flex;
+    position: fixed;
+    bottom: 50px;
+    right: 5px;
+    font-size: 50px;
+    border: solid 7px #2b240a;
+    border-radius: 15%;
+  }
+}
+/**aca tengo que mover el bottom  **/
+
+/*# sourceMappingURL=style.css.map */

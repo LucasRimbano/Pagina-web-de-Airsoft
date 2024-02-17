@@ -1,0 +1,127 @@
+/** ACA EMPIEZA EL HTML DE MAPA DONDE JUGAR **/ 
+
+
+
+.grilla-mapa { padding-bottom: 30px;
+    padding-left: 30px;
+    padding-right: 30px;
+    margin-top: 0px;
+    display: grid;
+    grid-template-columns: 1fr 1fr  1fr ;
+    grid-template-rows: 1fr 1fr ;
+    gap: 25px;
+     grid-template-areas:'mapa1 mapa2 mapa3 '
+    'mapa5 mapa6  mapa7' 
+    ;
+   
+
+    .mapa { text-align: center; 
+      border: solid 5px  #4e3919;
+     display: flexbox;
+    padding: 0px; 
+     background-color: #ded0b638;
+     
+     & iframe{ margin-top: 35px; 
+      margin-left: 5px;
+      margin-right: 5px;
+      margin-bottom: 0px;
+      }  
+     &:hover {
+        background-color: #f0e1bf70;
+        border-radius: 3%;
+        box-shadow: 5px 5px 9px 10px;
+        
+      
+      }
+        .m1 {
+           grid-area: mapa1 ;
+        }
+
+         h3 { 
+           background-color: #88714fe5;
+           box-sizing: border-box ;
+           color: rgb(29, 22, 10) ;
+           font-size: 35px;
+           padding: 10px 15px;
+           text-decoration: none;
+           margin-left: 30px;
+           margin-right: 30px;
+           border-top: solid 7px rgb(75, 73, 62);
+           border-bottom: solid 10px #383827;
+           border-left: solid 7px#3a3434;
+           border-right:solid 7px #413d3d;
+           border-radius: 8px;
+           padding: 10px 10px 10px 10px ;
+           color: #fcfaf4;
+           font-family: 'Times New Roman', Times, serif;
+           font-size: 50px;
+           text-align: center;
+        
+           
+           
+
+                             
+         }
+          & h3:hover { background-color:rgb(122, 89, 44);
+
+
+         }
+    
+         .mapa-link{ justify-content: center; 
+            
+          #linkmapa { 
+         
+            margin: 0px 100px;
+            box-shadow: 5px 5px 6px 5px #3a3434;
+            width: 200%;
+            box-sizing: border-box ;
+            color: rgb(155, 103, 5) ;
+            font-size: 30px;
+            padding: 10px 15px;
+            background-color: #BBAB8C;
+            text-decoration: none;
+            border-top: solid 7px rgb(110, 110, 105);
+            border-bottom: solid 10px #35352c;
+            border-left: solid 7px#3a3737;
+            border-right:solid 7px #35342d;
+            border-radius: 8px;
+            padding: 10px 10px 10px 10px ;
+            &:hover  { background-color:rgba(122, 89, 44, 0.767);
+                color: aliceblue;
+                box-shadow: 5px 5px 10px 10px #3a3434;
+                width: 200%;
+                text-decoration: none;
+                box-sizing: border-box ;
+                font-size: 43px;
+                padding: 10px 15px;
+                box-sizing: border-box ;
+                margin-left: 20px;
+                margin-right: 20px;
+                border-top: solid 3px rgb(75, 73, 62);
+                border-bottom: solid 10px #383827;
+                border-left: solid 3px#3a3434;
+                border-right:solid 3px #413d3d;
+                border-radius: 8px;
+                padding: 10px 10px 10px 10px ;
+                text-decoration: underline;
+              }
+            } 
+
+        
+     
+            
+    } 
+   
+   
+}
+  
+} 
+ 
+
+
+
+   
+  
+ 
+  /**ACA TERMINA EL HTML DE DONDE JUGAR MAPA  **/
+  

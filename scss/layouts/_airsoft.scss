@@ -1,0 +1,88 @@
+
+
+/**ACA EMPIEZA QUE ES EL AIRSOFT **/ 
+   /** esta parte esta tambien en el html de mapa h3 texto-tipo **/ 
+  .texto-tipo {
+  
+  
+    margin: 0;
+   
+    background-color: #F1D3B3;
+    color: #0f0e0d; 
+    font-family:  Georgia, Times, 'Times New Roman', serif ;
+    font-size: 40px; 
+    padding-top: 0px;
+    padding-left: 10px;
+    padding-bottom: 30px;
+    border-radius: 7px ;
+    text-align: center;
+    margin-bottom: 0;
+
+  & p:hover {
+    
+    
+    font-size: 45px;
+      color: #ffffff; /**lo voy a cambiar a blanco por el modo oscuro **/
+     border-radius: 3% solid ;
+      transition: 0.3s;
+    
+    } 
+       
+   /** con este condicional estoy dando modo oscuro a la mayoria de los textos principales de los html **/
+   @if $estilo-oscuro == dark {background-color:  #F1D3B3}
+   @else if $estilo-oscuro == light { background-color: #63513ec7; color:#ffffff;
+   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+   font-size: 38px;}  
+
+   h3 {
+    background-color: #BBAB8C;
+    box-sizing: border-box ;
+    color: rgb(155, 103, 5) ;
+     font-size: 35px;
+     padding: 10px 15px;
+   
+    
+     text-decoration: none;
+     margin-left: 30px;
+     margin-right: 30px;
+     border-top: solid 7px rgb(75, 73, 62);
+    border-bottom: solid 10px #383827;
+    border-left: solid 7px#3a3434;
+    border-right:solid 7px #413d3d;
+   border-radius: 8px;
+   padding: 10px 10px 10px 10px ;
+   }
+
+    .titulo { margin-bottom: 25px; 
+        margin-top: 0px; 
+         font-size: 50px;
+        text-align: center;
+        color:#fcf9ee;
+        background-color: #5D5241;
+        box-shadow: 2px 10px 3px #928269; 
+        padding-top: 10px;
+        padding-bottom: 10px;
+        
+      
+      }
+
+      #textocomoseorigino { background-color: #F1D3B3;
+        font-size: 33px;
+        
+        margin: 0px 0px;
+       
+        padding: 5px 15px;
+        
+        @if $estilo-oscuro == dark {background-color:  #F1D3B3}
+        @else if $estilo-oscuro == light { background-color: #63513ec7; color:#ffffff;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+      font-size: 38px;}  
+       
+      }
+
+
+  }
+  //** ACA TERMINA QUE ES EL AIRSOFT **// 
+
+ 
+  
