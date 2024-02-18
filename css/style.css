@@ -363,7 +363,7 @@ footer .footer .top-navigation:hover {
   background-color: rgba(136, 113, 79, 0.8980392157);
   box-sizing: border-box;
   color: rgb(29, 22, 10);
-  font-size: 33px;
+  font-size: 31px;
   padding: 10px 15px;
   text-decoration: none;
   margin-left: 20px;
@@ -376,7 +376,6 @@ footer .footer .top-navigation:hover {
   padding: 10px 10px 10px 10px;
   color: #fcfaf4;
   font-family: "Times New Roman", Times, serif;
-  font-size: 35px;
   text-align: center;
   max-width: 100%;
 }
