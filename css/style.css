@@ -363,11 +363,11 @@ footer .footer .top-navigation:hover {
   background-color: rgba(136, 113, 79, 0.8980392157);
   box-sizing: border-box;
   color: rgb(29, 22, 10);
-  font-size: 35px;
+  font-size: 33px;
   padding: 10px 15px;
   text-decoration: none;
-  margin-left: 30px;
-  margin-right: 30px;
+  margin-left: 20px;
+  margin-right: 20px;
   border-top: solid 7px rgb(75, 73, 62);
   border-bottom: solid 10px #383827;
   border-left: solid 7px #3a3434;
@@ -376,8 +376,9 @@ footer .footer .top-navigation:hover {
   padding: 10px 10px 10px 10px;
   color: #fcfaf4;
   font-family: "Times New Roman", Times, serif;
-  font-size: 50px;
+  font-size: 35px;
   text-align: center;
+  max-width: 100%;
 }
 .grilla-mapa .mapa h2:hover {
   background-color: rgb(122, 89, 44);
@@ -386,8 +387,8 @@ footer .footer .top-navigation:hover {
   justify-content: center;
 }
 .grilla-mapa .mapa .mapa-link #linkmapa {
+  margin-top: 5px;
   box-shadow: 5px 5px 6px 5px #3a3434;
-  width: 200%;
   box-sizing: border-box;
   color: rgb(155, 103, 5);
   font-size: 19px;
@@ -405,7 +406,6 @@ footer .footer .top-navigation:hover {
   background-color: rgba(122, 89, 44, 0.767);
   color: aliceblue;
   box-shadow: 5px 5px 10px 10px #3a3434;
-  width: 200%;
   text-decoration: none;
   box-sizing: border-box;
   font-size: 19px;
@@ -839,6 +839,9 @@ main .titulo {
   }
 }
 @media (max-width: 850px) {
+  h2 {
+    font-size: 10px;
+  }
   #linkmapa {
     text-decoration: none;
   }
