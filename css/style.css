@@ -386,12 +386,11 @@ footer .footer .top-navigation:hover {
   justify-content: center;
 }
 .grilla-mapa .mapa .mapa-link #linkmapa {
-  margin: 0px 100px;
   box-shadow: 5px 5px 6px 5px #3a3434;
   width: 200%;
   box-sizing: border-box;
   color: rgb(155, 103, 5);
-  font-size: 18px;
+  font-size: 21px;
   padding: 10px 15px;
   background-color: #BBAB8C;
   text-decoration: none;
@@ -409,7 +408,7 @@ footer .footer .top-navigation:hover {
   width: 200%;
   text-decoration: none;
   box-sizing: border-box;
-  font-size: 18px;
+  font-size: 20px;
   padding: 10px 15px;
   box-sizing: border-box;
   margin-left: 20px;
@@ -843,9 +842,9 @@ main .titulo {
 }
 @media (max-width: 850px) {
   #linkmapa {
-    font-size: 5px;
-    margin: 0px;
-    padding: 2px 2px;
+    margin: 100px 10px;
+  }
+  a {
     font-size: 5px;
   }
   iframe {
