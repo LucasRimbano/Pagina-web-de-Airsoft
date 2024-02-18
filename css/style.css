@@ -842,7 +842,7 @@ main .titulo {
 }
 @media (max-width: 850px) {
   #linkmapa {
-    margin: 100px 10px;
+    text-decoration: none;
   }
   a {
     font-size: 5px;
