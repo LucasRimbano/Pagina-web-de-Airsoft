@@ -24,29 +24,22 @@
   
   }
 
-  @media (max-width:900px) { .navbarindex { background-color: #998d59d0;
-    display: flexbox;
-    flex-direction: column;
-    margin: 0px 0px; 
-    padding: 10px 2px;
-    font-size: 10px;
-    gap: 3px; }
-  .navbarlinkindex { padding: 5px 15px;
-  margin: 0px 15px;
-  font-size: 15px;
-  color: #5a4423;}
-  .navbarlinkindex:hover{ font-size: 20px;
-    padding: 8px 10px;
-    transition: 0.3s;
-    text-decoration: underline ;
-    border-top: solid 3px #383827b9;
-    border-left: solid 3px #383827b9;
-    border-right:solid 5px #383827b9 ;
-    border-bottom: solid 8px #383827b9;
-    color: #0f0e0d;
+  @media (max-width:900px) { 
+   .navbarindex { 
+      background-color: #68634ed0;
+      display: flexbox;
+      flex-direction: column;
+      margin: 0px 0px; 
+      padding: 10px 2px;
+      font-size: 10px;
+      align-items: stretch;}
+   .navbarlinkindex { 
+       padding: 5px 15px;
+       margin: 0px 15px;
+       font-size: 15px;
+       color: #5a4423;}
+    
   
-  
-  }
   }  
 
 
@@ -100,9 +93,10 @@
 @media (max-width:850px ) {
 
 
-.card-title { padding: 3px 2px; 
-             width: 250px ; 
-}
+  .card-title { padding: 3px 2px; 
+               width: 250px ; }
+              
+
 }
 
 
@@ -217,7 +211,7 @@
      }
         
      @media (max-width:850px) {
-      h2 { font-size: 10px;}    
+         
         #linkmapa {text-decoration: none;
 
                }
@@ -235,18 +229,18 @@
        @media (max-width:950px)
 {
   .grilla-contacto { display: flex;
-  flex-direction: column;
-  padding-bottom: 20px;
-  gap: 3px;
-object-fit: cover;}
-  .input { width: 250px; }
-  .form { width: 600px;
-  
-  }
+   flex-direction: column;
+   padding-bottom: 20px;
+   gap: 3px;
+   object-fit: cover;}
+
+   .form {max-width: 90%;}
+   .input { max-width: 60%; }
   .textarea { margin-left: 0px;
-      width:400px; 
+             max-width:90%; 
              height: 300px;}
   .c1 { height: 20px;
+
     
 
   }
@@ -255,12 +249,26 @@ object-fit: cover;}
 }
 
 
+@media (max-width:3050px) 
+{
+   .Rimba { color: #FAEED1;
+      display: flex;
+      position: absolute;
+      bottom:  555px ; 
+      right: 5px;
+      font-size: 60px;
+      border:solid 7px #2b240a;
+      border-radius: 15% ;
+
+   }
+}
+
        @media (max-width:950px)
 {
   
   .Rimba   { display: flex;
     
-  position: fixed;
+  position: absolute;
   bottom:  50px ; 
   right: 5px;
   font-size: 50px;
@@ -268,6 +276,8 @@ object-fit: cover;}
   border-radius: 15% ; 
 }
 }
+
+
 /**aca tengo que mover el bottom  **/ 
 
 

@@ -23,18 +23,15 @@
         color:rgb(155, 103, 5) ;
       }
 
-      & a:hover{ font-size: 30px;
-        padding: 8px 10px;
+      & a:hover{ font-size: 20px;
+        transform: scale(1.01);
         transition: 0.5s;
         text-decoration: underline ;
         border-top: solid 3px #383827b9;
         border-left: solid 3px #383827b9;
         border-right:solid 5px #383827b9 ;
         border-bottom: solid 8px #383827b9;
-        color: #080808;
-      
-      
-      }    
+        color: #080808;}    
 
   
   }
