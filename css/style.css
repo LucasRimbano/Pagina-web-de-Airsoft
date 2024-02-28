@@ -13,49 +13,135 @@ el condicional segun a donde me quiero mover si estilo oscuro o mas claro
 }
 
 /** ACA EMPIEZA  FOOTER **/
+/**
+
+footer {margin-bottom: 0px;
+    margin-top: 50px;
+
+    .footer { 
+        background-color:  #bba67de5 ; 
+        align-items: center;
+        text-align: center;
+       padding-top:  15px ; 
+       padding-bottom: 55px;
+       margin-bottom: 0px;
+
+
+       a { color: rgb(155, 103, 5);
+        font-size: 25px;
+       text-align: center;
+
+
+       &:hover { background-color: #8a7968; 
+        color: #fcfaf4;
+        border: 5px solid #a87844;
+        border-radius: 15px;
+        padding: 6px 3px;
+        transition: 0.3s;
+
+
+        }
+
+          }
+
+          .top-navigation {background-color: $primary-color; 
+            text-decoration: none;
+            margin-left: 20px;
+            margin-right: 20px;
+            border-top: solid 3px rgb(75, 73, 62);
+            border-bottom: solid 10px #383827d7;
+            border-left: solid 3px#3a3434;
+            border-right:solid 3px #413d3d;
+            border-radius: 8px;
+            padding: 10px 10px 10px 10px ;
+            font-size: 15px;
+            &:hover { font-size: 20px;
+                padding-left: 15px;
+                margin-left: 20px;
+                 transition: 0.4s;
+              }
+           }
+
+
+
+
+        }
+
+
+      }
+
+
+
+
+
+**/
+ol li {
+  text-align: center;
+  background-color: #cfc5af;
+  list-style-type: none;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  border-top: solid 2px rgb(75, 73, 62);
+  border-bottom: solid 5px rgba(56, 56, 39, 0.8431372549);
+  border-left: solid 3px #3a3434;
+  border-right: solid 3px #413d3d;
+  border-radius: 8px;
+  margin: 0px 250px;
+}
+
 footer {
-  margin-bottom: 0px;
   margin-top: 50px;
 }
-footer .footer {
+footer .footer-grid {
   background-color: rgba(187, 166, 125, 0.8980392157);
-  align-items: center;
-  text-align: center;
-  padding-top: 15px;
-  padding-bottom: 55px;
+  display: grid;
+  grid-template-columns: 1fr 2fr 1fr;
+  padding-bottom: 20px;
   margin-bottom: 0px;
+  grid-template-areas: "f1  f2 f3 ";
+  grid-gap: 200px;
 }
-footer .footer a {
+footer .footer-grid .img-footer {
+  height: 300px;
+  width: 450px;
+}
+footer .footer-grid .footer-box {
+  display: flexbox;
+  margin-top: 20px;
+  border: solid 7px rgba(59, 56, 50, 0);
+  padding: 30px 30px;
+  height: 100%;
+  width: 105%;
+}
+footer .footer-grid .footer-box .copyright p {
+  align-self: end;
+  font-size: 20px;
+}
+footer .footer-grid .footer-box .top-navigation {
+  background-color: #cfc5af;
+  text-decoration: none;
+  margin-left: 20px;
+  margin-right: 20px;
+  border-radius: 8px;
+  font-size: 15px;
+}
+footer .footer-grid .footer-box .top-navigation:hover {
+  transform: scale(1.1);
+  margin-left: 20px;
+  transition: 0.4s;
+}
+footer a {
   color: rgb(155, 103, 5);
   font-size: 25px;
   text-align: center;
 }
-footer .footer a:hover {
+footer a:hover {
   background-color: #8a7968;
   color: #fcfaf4;
   border: 5px solid #a87844;
   border-radius: 15px;
   padding: 6px 3px;
   transition: 0.3s;
-}
-footer .footer .top-navigation {
-  background-color: #cfc5af;
-  text-decoration: none;
-  margin-left: 20px;
-  margin-right: 20px;
-  border-top: solid 3px rgb(75, 73, 62);
-  border-bottom: solid 10px rgba(56, 56, 39, 0.8431372549);
-  border-left: solid 3px #3a3434;
-  border-right: solid 3px #413d3d;
-  border-radius: 8px;
-  padding: 10px 10px 10px 10px;
-  font-size: 15px;
-}
-footer .footer .top-navigation:hover {
-  font-size: 20px;
-  padding-left: 15px;
-  margin-left: 20px;
-  transition: 0.4s;
 }
 
 /** NAV BAR INDEX **/
@@ -110,21 +196,20 @@ footer .footer .top-navigation:hover {
 .navbar .navbarlink {
   background-color: #cfc5af;
   text-decoration: none;
-  margin-left: 20px;
   margin-right: 200px;
   border-top: solid 3px rgb(75, 73, 62);
   border-bottom: solid 10px #383827;
   border-left: solid 3px #3a3434;
   border-right: solid 3px #413d3d;
-  border-radius: 8px;
-  padding: 10px 10px 10px 10px;
+  border-radius: 5px;
+  padding: 3px 10px;
   gap: 10px;
   display: flex;
   padding-left: 50px;
 }
 .navbar .navbarlink:hover {
-  background-color: rgba(235, 217, 191, 0.6509803922);
-  font-size: 30px;
+  background-color: rgba(235, 217, 191, 0.4039215686);
+  font-size: 25px;
   color: #252420;
   margin-top: 7px;
   font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
