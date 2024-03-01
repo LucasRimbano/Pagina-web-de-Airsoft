@@ -329,9 +329,6 @@ footer a:hover {
   width: 100%;
   padding-right: 0px;
 }
-.grilla-contacto .contacto .Rimba {
-  background-color: #383827;
-}
 
 .c1 {
   background-image: url(https://images.unsplash.com/photo-1665065769045-159f8ecf5016?q=80&w=1933&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
@@ -954,29 +951,6 @@ main .titulo {
   }
   .c1 {
     height: 20px;
-  }
-}
-@media (max-width: 3050px) {
-  .Rimba {
-    color: #FAEED1;
-    display: flex;
-    position: absolute;
-    bottom: 555px;
-    right: 5px;
-    font-size: 60px;
-    border: solid 7px #2b240a;
-    border-radius: 15%;
-  }
-}
-@media (max-width: 950px) {
-  .Rimba {
-    display: flex;
-    position: absolute;
-    bottom: 50px;
-    right: 5px;
-    font-size: 50px;
-    border: solid 7px #2b240a;
-    border-radius: 15%;
   }
 }
 /**aca tengo que mover el bottom  **/
