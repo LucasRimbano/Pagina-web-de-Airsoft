@@ -39,5 +39,4 @@ El objetivo de esta página es informar, conectar jugadores y facilitar la organ
 **lucasrimbano@gmail.com**
 
 ---
-
-Desarrollado por
+Desarrollado por [lucasrimbano](https://www.instagram.com/lucasrimbano/)
