@@ -1,33 +1,43 @@
-# Airsoft Buenos Aires
+# 🎯 Airsoft Buenos Aires
 
-Bienvenido a **Airsoft Buenos Aires**, una página web dedicada a difundir y conectar la comunidad de airsoft en Buenos Aires y alrededores.
+¡Bienvenido a Airsoft Buenos Aires!  
+Una página web dedicada a difundir y conectar la comunidad de airsoft en Buenos Aires y alrededores.
 
-## ¿Qué vas a  encontrar en la web?
+---
 
-- **¿Qué es el airsoft?**  
-  Explicación sobre la modalidad, historia y reglas básicas del deporte.
+## 🧐 ¿Qué vas a encontrar en la web?
 
-- **Tipos de marcadoras**  
-  Información sobre pistolas, rifles y otros equipos utilizados en airsoft.
+### ❓ ¿Qué es el airsoft?
+Explicación sobre la modalidad, historia y reglas básicas del deporte.
 
-- **Tipos de partidas**  
-  Descripción de los modos de juego más populares.
+### 🔫 Tipos de marcadoras
+Información sobre pistolas, rifles y otros equipos utilizados en airsoft.
 
-- **Lugares para jugar**  
-  Mapa y listado de campos y clubes donde puedes practicar airsoft en Buenos Aires.
+### 🎮 Tipos de partidas
+Descripción de los modos de juego más populares.
 
-- **Contacto**  
-  Formulario para consultas y sugerencias.
+### 📍 Lugares para jugar
+Mapa y listado de campos y clubes donde puedes practicar airsoft en Buenos Aires.
 
-- **Armar grupos de airsoft**  
-  Espacio para que los usuarios creen y publiquen sus propios grupos, agregando foto, nombre, integrantes y roles.
+### 📬 Contacto
+Formulario para consultas y sugerencias.
 
-## Objetivo
+### 👥 Armar grupos de airsoft
+Espacio para que los usuarios creen y publiquen sus propios grupos, agregando foto, nombre, integrantes y roles.
+
+---
+
+## 🎯 Objetivo
 
 El objetivo de esta página es informar, conectar jugadores y facilitar la organización de partidas y grupos, promoviendo el juego seguro y responsable.
 
 ---
-**Contacto:** 👤 
-Para cualquier consulta, sugerencia o colaboración, puedes escribirme a:  
-lucasrimbano@gmail.com
-Desarrollado por [lucasrimbano](https://www.instagram.com/lucasrimbano/)
+
+## 📧 Contacto
+
+👤 Para cualquier consulta, sugerencia o colaboración, puedes escribirme a:  
+**lucasrimbano@gmail.com**
+
+---
+
+Desarrollado por
