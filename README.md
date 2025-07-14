@@ -27,7 +27,7 @@ Bienvenido a **Airsoft Buenos Aires**, una página web dedicada a difundir y con
 El objetivo de esta página es informar, conectar jugadores y facilitar la organización de partidas y grupos, promoviendo el juego seguro y responsable.
 
 ---
-**Contacto:**  
+**Contacto:** 👤 
 Para cualquier consulta, sugerencia o colaboración, puedes escribirme a:  
 lucasrimbano@gmail.com
 Desarrollado por [lucasrimbano](https://www.instagram.com/lucasrimbano/)
