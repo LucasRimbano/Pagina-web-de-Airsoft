@@ -758,7 +758,7 @@ main .titulo {
     gap: 20px;
   }
 
-}
+
   footer .footer-grid .footer-box {
     flex-direction: column; /* 🔁 CAMBIA de row a column */
     align-items:stretch ; /* quiero a la izquierda */
