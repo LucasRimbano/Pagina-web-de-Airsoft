@@ -27,31 +27,57 @@ ol li {
 }
 
 footer {
-  margin-top: 50px;
+  margin-top: 100px;
 }
 footer .footer-grid {
   background-color: rgba(187, 166, 125, 0.8980392157);
-  padding-bottom: 20px;
+  padding-bottom: 2px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   margin-bottom: 0px;
+  padding: 2px 0px;
 }
-footer .footer-grid .img-footer {
-  height: 300px;
-  width: 450px;
-}
+
 footer .footer-grid .footer-box {
-  display: flexbox;
-  margin-top: 20px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
   border: solid 7px rgba(59, 56, 50, 0);
-  padding: 30px 30px;
+  padding: 12px 12px;
 }
 footer .footer-grid .footer-box .copyright p {
   font-size: 20px;
 }
+footer .footer-grid .footer-box ol {
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  padding: 0;
+  margin: 0;
+  gap: 30px;
+}
+footer li{
+ text-align: center;
+  background-color: #cfc5af;
+  list-style-type: none;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  border-top: solid 2px rgb(75, 73, 62);
+  border-bottom: solid 5px rgba(56, 56, 39, 0.8431372549);
+  border-left: solid 3px #3a3434;
+  border-right: solid 3px #413d3d;
+  border-radius: 8px;
+}
+footer .footer-grid .footer-box li {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 5px 10px;
+}
+
 footer .footer-grid .footer-box .top-navigation {
   background-color: #cfc5af;
-  text-decoration: none;
-  margin-left: 20px;
-  margin-right: 20px;
   border-radius: 8px;
   font-size: 15px;
 }
@@ -62,16 +88,14 @@ footer .footer-grid .footer-box .top-navigation:hover {
 }
 footer a {
   color: rgb(155, 103, 5);
-  font-size: 25px;
-  text-align: center;
+  font-size: 18px;
+  text-decoration: none;
 }
 footer a:hover {
-  background-color: #8a7968;
   color: #fcfaf4;
-  border: 5px solid #a87844;
-  border-radius: 15px;
   padding: 6px 3px;
   transition: 0.3s;
+  transform: scale(1.1);
 }
 
 /** NAV BAR INDEX **/
@@ -557,6 +581,7 @@ footer a:hover {
 /** aca termina HTML TIPO MARCADORAS  **/
 /**ACA EMPIEZA EL HTML DE DISTINTOS TIPOS DE PARTIDAS**/
 body {
+  margin:  0px 0px;
   padding: 0px 0px;
   background-image: url("https://wallpapers.com/images/featured/camo-b4jyfziypywrtbbz.jpg");
   background-size: 110%;
@@ -720,29 +745,47 @@ main .titulo {
     transition: 0.3s;
   }
 }
+
+       
+  
+
 /**FOOTER  **/
-@media (max-width: 850px) {
-  .footer-grid {
-    display: flex;
-    margin: 10px 0px;
+@media (max-width: 600px) {
+  footer .footer-grid {
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+    gap: 20px;
   }
-  .footer-box {
-    max-width: 90%;
-    max-height: 70%;
-    padding: 0px 0px;
+
+}
+  footer .footer-grid .footer-box {
+    flex-direction: column; /* 🔁 CAMBIA de row a column */
+    align-items:stretch ; /* quiero a la izquierda */
+    margin: 0px 0px;
+    padding: 10px 2px;
   }
-  li {
-    margin: 0px;
+
+  footer .footer-grid .footer-box ol {
+    flex-direction: column; /* 🔁 CAMBIA de row a column */
+    align-items: stretch;
+    margin: 0px 0px;
+    padding: 10px 2px;
+    gap: 10px;
   }
-  .p {
-    font-size: 20px;
+
+  footer li {
+    width: 100%;
+    text-align: center;
+    font-size: 16px;
+  }
+
+  footer .copyright p {
+    text-align: center;
+    font-size: 14px;
   }
 }
-@media (max-width: 900px) {
-  .p {
-    font-size: 10px;
-  }
-}
+
 /** INDEX **/
 @media (max-width: 2050px) {
   .card-title {
