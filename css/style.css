@@ -966,3 +966,112 @@ main .titulo {
   visibility: visible;
   transform: translateY(0);
 }
+/* ================================
+   NAVBAR – EFECTO VISUAL PROFESIONAL
+================================ */
+
+.navbarlinkindex,
+.navbar .navbarlink{
+  position: relative;
+  transition: transform .18s ease, box-shadow .18s ease, background .18s ease;
+  animation: navPulse 3.2s ease-in-out infinite;
+}
+
+/* Pulso suave */
+@keyframes navPulse{
+  0%{
+    box-shadow: 0 0 0 rgba(155,103,5,0);
+  }
+  50%{
+    box-shadow: 0 0 14px rgba(155,103,5,0.45);
+  }
+  100%{
+    box-shadow: 0 0 0 rgba(155,103,5,0);
+  }
+}
+
+/* Hover fuerte (invita al click) */
+.navbarlinkindex:hover,
+.navbar .navbarlink:hover{
+  animation: none;
+  transform: translateY(-2px) scale(1.05);
+  background-color: rgba(235,217,191,0.9);
+}
+.cta-nav{
+  animation: navPulse 2.6s ease-in-out infinite;
+}/* ================================
+   NAVBAR CTA – INVITA A CLICKEAR
+================================ */
+
+.navbarlinkindex,
+.navbar .navbarlink{
+  position: relative;
+  overflow: hidden;
+  transition: transform .18s ease, box-shadow .18s ease, background .18s ease;
+}
+
+/* pulso rítmico */
+.navbarlinkindex{
+  animation: navCTA 3.6s ease-in-out infinite;
+}
+
+.navbar .navbarlink{
+  animation: navCTA 3.6s ease-in-out infinite;
+}
+
+@keyframes navCTA{
+  0%{
+    transform: scale(1);
+    box-shadow: 0 0 0 rgba(155,103,5,0);
+  }
+  45%{
+    transform: scale(1.04);
+    box-shadow: 0 0 18px rgba(155,103,5,0.45);
+  }
+  55%{
+    transform: scale(1.04);
+    box-shadow: 0 0 18px rgba(155,103,5,0.45);
+  }
+  100%{
+    transform: scale(1);
+    box-shadow: 0 0 0 rgba(155,103,5,0);
+  }
+}
+
+/* barrido de luz */
+.navbarlinkindex::after,
+.navbar .navbarlink::after{
+  content:"";
+  position:absolute;
+  inset:0;
+  background: linear-gradient(
+    120deg,
+    transparent 0%,
+    rgba(255,255,255,.35) 50%,
+    transparent 100%
+  );
+  transform: translateX(-120%);
+  animation: navSweep 4.5s ease-in-out infinite;
+  pointer-events:none;
+}
+
+@keyframes navSweep{
+  0%{ transform: translateX(-120%); }
+  65%{ transform: translateX(120%); }
+  100%{ transform: translateX(120%); }
+}
+
+/* hover = decisión */
+.navbarlinkindex:hover,
+.navbar .navbarlink:hover{
+  animation: none;
+  transform: translateY(-3px) scale(1.07);
+  background-color: rgba(235,217,191,0.92);
+  box-shadow: 0 18px 35px rgba(0,0,0,0.45);
+}
+.cta-nav{
+  animation: navCTA 3.6s ease-in-out infinite;
+}
+.cta-nav::after{
+  animation: navSweep 4.5s ease-in-out infinite;
+}
