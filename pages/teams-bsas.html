@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>Teams de Airsoft en Buenos Aires | Airsoft Buenos Aires</title>
+  <meta name="description" content="Listado de teams de airsoft activos en Buenos Aires, Argentina. Buscá por zona, modalidad y contacto. Sumá tu team al listado." />
+  <meta name="keywords" content="airsoft, teams airsoft buenos aires, grupos airsoft buenos aires, airsoft argentina, milsim buenos aires" />
+
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Teams de Airsoft en Buenos Aires" />
+  <meta property="og:description" content="Listado de teams de airsoft activos en Buenos Aires. Buscá por zona, modalidad y contacto." />
+  <meta property="og:url" content="https://lucasrimbano.github.io/primer_repo/pages/teams-bsas.html" />
+
+  <link rel="shortcut icon" href="../img/glock.JPG" type="image/x-icon">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Tu CSS general (lo mantenemos) -->
+  <link rel="stylesheet" href="../css/style.css" />
+  <!-- CSS SOLO para esta página -->
+  <link rel="stylesheet" href="../css/base/teams.css" />
+</head>
+
+<body class="teams-page">
+
+  <header class="teams-header">
+    <nav class="navbarindex teams-navbar">
+      <a class="navbarlinkindex" href="./airsoft.html">¿Qué es el airsoft?</a>
+      <a class="navbarlinkindex" href="./tiposMarcadoras.html">Tipos de Marcadoras</a>
+      <a class="navbarlinkindex" href="./tiposPartidas.html">Tipos de partidas</a>
+      <a class="navbarlinkindex" href="./mapabs.html">Lugares para jugar</a>
+      <a class="navbarlinkindex is-active" href="./teams-bsas.html">Teams Buenos Aires</a>
+      <a class="navbarlinkindex" href="./contacto.html">Contacto</a>
+    </nav>
+  </header>
+
+  <main class="container teams-wrap my-4">
+
+    <!-- HERO -->
+    <section class="teams-hero">
+      <div class="teams-hero__content">
+        <div class="teams-hero__text">
+          <h1>Teams de Airsoft en Buenos Aires</h1>
+          <p>
+            Directorio público de <strong>teams activos</strong> en Buenos Aires, Argentina.
+            Filtrá por zona y modalidad, y encontrá contacto directo.
+          </p>
+
+          <div class="teams-hero__meta">
+            <span class="meta-pill">Actualizable</span>
+            <span class="meta-pill">CABA + GBA + La Plata</span>
+            <span class="meta-pill">Milsim / CQB / Bosque</span>
+          </div>
+        </div>
+
+        <div class="teams-hero__cta">
+          <a class="btn btn-primary btn-lg" href="./contacto.html">Sumar mi team</a>
+          <div class="hint">Enviá: nombre, zona, modalidad, días y links.</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FILTROS -->
+    <section class="teams-filters">
+      <div class="row g-2 align-items-center">
+        <div class="col-md-6">
+          <label class="form-label small mb-1" for="teamSearch">Buscar</label>
+          <input id="teamSearch" type="search" class="form-control" placeholder="Buscar por nombre, zona, modalidad, tags..." />
+        </div>
+
+        <div class="col-md-3">
+          <label class="form-label small mb-1" for="filterZona">Zona</label>
+          <select id="filterZona" class="form-select">
+            <option value="">Todas</option>
+            <option value="CABA">CABA</option>
+            <option value="GBA Norte">GBA Norte</option>
+            <option value="GBA Oeste">GBA Oeste</option>
+            <option value="GBA Sur">GBA Sur</option>
+            <option value="La Plata">La Plata</option>
+          </select>
+        </div>
+
+        <div class="col-md-3">
+          <label class="form-label small mb-1" for="filterModo">Modalidad</label>
+          <select id="filterModo" class="form-select">
+            <option value="">Todas</option>
+            <option value="Speedsoft">Speedsoft</option>
+            <option value="Milsim">Milsim</option>
+            <option value="Recreativo">Recreativo</option>
+            <option value="CQB">CQB</option>
+            <option value="Bosque">Bosque</option>
+          </select>
+        </div>
+      </div>
+
+      <div class="teams-results">
+        <div class="teams-results__count">
+          <span id="resultCount">0</span> teams encontrados
+        </div>
+
+        <button id="clearFilters" class="btn btn-outline-secondary btn-sm" type="button">
+          Limpiar filtros
+        </button>
+      </div>
+    </section>
+
+    <!-- GRID -->
+    <section id="teamsGrid" class="row g-3 teams-grid">
+
+      <!-- CARD -->
+      <div class="col-md-6 col-lg-4 team-card"
+           data-nombre="Team Ejemplo Alpha"
+           data-zona="CABA"
+           data-modo="CQB"
+           data-tags="caba cqb speedsoft recluta whatsapp instagram">
+        <article class="card h-100 team">
+          <div class="team__top">
+            <div>
+              <h2 class="team__name">Team Ejemplo Alpha</h2>
+              <div class="team__badges">
+                <span class="badge badge-zone">CABA</span>
+                <span class="badge badge-mode">CQB</span>
+                <span class="badge badge-soft">Recluta</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="team__body">
+            <p class="team__desc">Entrenamiento semanal. Enfoque CQB. Nivel mixto.</p>
+
+            <ul class="team__list">
+              <li><strong>Días:</strong> Sábados</li>
+              <li><strong>Contacto:</strong> WhatsApp / Instagram</li>
+            </ul>
+
+            <div class="team__actions">
+              <a class="btn btn-outline-primary btn-sm" href="#" target="_blank" rel="noopener">Instagram</a>
+              <a class="btn btn-outline-success btn-sm" href="#" target="_blank" rel="noopener">WhatsApp</a>
+            </div>
+          </div>
+        </article>
+      </div>
+
+      <!-- CARD -->
+      <div class="col-md-6 col-lg-4 team-card"
+           data-nombre="Team Ejemplo Bravo"
+           data-zona="GBA Norte"
+           data-modo="Bosque"
+           data-tags="gba norte bosque milsim operaciones">
+        <article class="card h-100 team">
+          <div class="team__top">
+            <div>
+              <h2 class="team__name">Team Ejemplo Bravo</h2>
+              <div class="team__badges">
+                <span class="badge badge-zone">GBA Norte</span>
+                <span class="badge badge-mode">Bosque</span>
+                <span class="badge badge-soft">Milsim</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="team__body">
+            <p class="team__desc">Enfoque Milsim y operaciones en terreno abierto.</p>
+
+            <ul class="team__list">
+              <li><strong>Días:</strong> Domingos</li>
+              <li><strong>Contacto:</strong> Instagram</li>
+            </ul>
+
+            <div class="team__actions">
+              <a class="btn btn-outline-primary btn-sm" href="#" target="_blank" rel="noopener">Instagram</a>
+            </div>
+          </div>
+        </article>
+      </div>
+
+      <!-- CARD -->
+      <div class="col-md-6 col-lg-4 team-card"
+           data-nombre="Team Ejemplo Charlie"
+           data-zona="GBA Sur"
+           data-modo="Recreativo"
+           data-tags="gba sur recreativo principiantes newbies whatsapp">
+        <article class="card h-100 team">
+          <div class="team__top">
+            <div>
+              <h2 class="team__name">Team Ejemplo Charlie</h2>
+              <div class="team__badges">
+                <span class="badge badge-zone">GBA Sur</span>
+                <span class="badge badge-mode">Recreativo</span>
+                <span class="badge badge-soft">Principiantes</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="team__body">
+            <p class="team__desc">Team social, salidas a distintos campos. Ideal para arrancar.</p>
+
+            <ul class="team__list">
+              <li><strong>Días:</strong> Variable</li>
+              <li><strong>Contacto:</strong> WhatsApp</li>
+            </ul>
+
+            <div class="team__actions">
+              <a class="btn btn-outline-success btn-sm" href="#" target="_blank" rel="noopener">WhatsApp</a>
+            </div>
+          </div>
+        </article>
+      </div>
+
+    </section>
+
+    <!-- CTA FINAL -->
+    <section class="teams-final">
+      <div class="teams-final__text">
+        <h3>¿Tu team está activo y querés aparecer acá?</h3>
+        <p>
+          Enviá: nombre del team, zona, modalidad, días, IG/WhatsApp, si recluta y una descripción corta.
+        </p>
+      </div>
+      <div class="teams-final__cta">
+        <a class="btn btn-primary" href="./contacto.html">Sumar mi team</a>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="teams-footer">
+    <div class="footer-grid">
+      <div class="footer-box g2">
+        <ol>
+          <li><a class="top-navigation" href="../index.html">Volver al inicio</a></li>
+          <li><small class="text-muted">© 2026 Airsoft Buenos Aires. Todos los derechos reservados.</small></li>
+        </ol>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+  <script>
+    const searchEl = document.getElementById("teamSearch");
+    const zonaEl = document.getElementById("filterZona");
+    const modoEl = document.getElementById("filterModo");
+    const cards = Array.from(document.querySelectorAll(".team-card"));
+    const countEl = document.getElementById("resultCount");
+    const clearBtn = document.getElementById("clearFilters");
+
+    function normalize(s){ return (s || "").toLowerCase().trim(); }
+
+    function applyFilters(){
+      const q = normalize(searchEl.value);
+      const z = normalize(zonaEl.value);
+      const m = normalize(modoEl.value);
+
+      let visible = 0;
+
+      cards.forEach(card => {
+        const nombre = normalize(card.dataset.nombre);
+        const zona = normalize(card.dataset.zona);
+        const modo = normalize(card.dataset.modo);
+        const tags = normalize(card.dataset.tags);
+
+        const matchQ = !q || (nombre + " " + tags + " " + zona + " " + modo).includes(q);
+        const matchZ = !z || zona === z;
+        const matchM = !m || modo === m;
+
+        const show = matchQ && matchZ && matchM;
+        card.style.display = show ? "" : "none";
+        if(show) visible++;
+      });
+
+      countEl.textContent = visible;
+    }
+
+    function clearFilters(){
+      searchEl.value = "";
+      zonaEl.value = "";
+      modoEl.value = "";
+      applyFilters();
+      searchEl.focus();
+    }
+
+    [searchEl, zonaEl, modoEl].forEach(el => el.addEventListener("input", applyFilters));
+    clearBtn.addEventListener("click", clearFilters);
+
+    applyFilters();
+  </script>
+
+</body>
+</html>

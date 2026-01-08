@@ -1,0 +1,280 @@
+/* =========================================================
+   teams.css – SOLO para pages/teams-bsas.html
+========================================================= */
+
+body.teams-page{
+  background-image: url("https://wallpapers.com/images/featured/camo-b4jyfziypywrtbbz.jpg");
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+
+/* Overlay para bajar ruido del camo */
+body.teams-page::before{
+  content:"";
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,0.52);
+  pointer-events: none;
+  z-index: 0;
+}
+
+body.teams-page *{
+  position: relative;
+  z-index: 1;
+}
+
+/* Navbar: evita el padding-left enorme SOLO acá */
+.teams-navbar{
+  padding-left: 0 !important;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+/* Link activo */
+.teams-navbar .is-active{
+  outline: 2px solid rgba(155,103,5,0.45);
+  background: rgba(245,240,228,0.85);
+}
+
+/* Panel central */
+.teams-wrap{
+  max-width: 1200px;
+  background: rgba(245, 240, 228, 0.92);
+  border: 1px solid rgba(0,0,0,0.12);
+  border-radius: 18px;
+  padding: 22px;
+  box-shadow: 0 18px 45px rgba(0,0,0,0.35);
+}
+
+/* HERO */
+.teams-hero{
+  border-radius: 16px;
+  border: 1px solid rgba(255,255,255,0.12);
+  background: linear-gradient(135deg, rgba(15,15,15,0.92), rgba(15,15,15,0.60));
+  padding: 22px;
+  margin-bottom: 16px;
+}
+
+.teams-hero__content{
+  display: flex;
+  gap: 16px;
+  align-items: flex-start;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.teams-hero__text{
+  max-width: 760px;
+}
+
+.teams-hero h1{
+  margin: 0 0 8px 0;
+  font-weight: 900;
+  letter-spacing: 0.3px;
+  color: #fff;
+}
+
+.teams-hero p{
+  margin: 0;
+  color: rgba(255,255,255,0.92);
+  line-height: 1.5;
+}
+
+.teams-hero__meta{
+  margin-top: 12px;
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
+.meta-pill{
+  display: inline-flex;
+  align-items: center;
+  padding: 6px 10px;
+  border-radius: 999px;
+  font-size: 0.85rem;
+  background: rgba(255,255,255,0.10);
+  border: 1px solid rgba(255,255,255,0.16);
+  color: rgba(255,255,255,0.92);
+}
+
+.teams-hero__cta{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 8px;
+}
+
+.teams-hero__cta .hint{
+  font-size: 0.85rem;
+  color: rgba(255,255,255,0.75);
+}
+
+/* FILTROS */
+.teams-filters{
+  background: rgba(255,255,255,0.78);
+  border: 1px solid rgba(0,0,0,0.10);
+  border-radius: 14px;
+  padding: 14px;
+  margin-bottom: 14px;
+}
+
+#teamSearch, #filterZona, #filterModo{
+  border: 2px solid rgba(0,0,0,0.15);
+  border-radius: 12px;
+}
+
+#teamSearch:focus, #filterZona:focus, #filterModo:focus{
+  border-color: rgba(155,103,5,0.60);
+  box-shadow: 0 0 0 .2rem rgba(155,103,5,0.18);
+}
+
+.teams-results{
+  margin-top: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.teams-results__count{
+  font-weight: 700;
+  color: rgba(0,0,0,0.70);
+}
+
+/* CARDS */
+.team{
+  border-radius: 14px;
+  border: 1px solid rgba(0,0,0,0.12);
+  overflow: hidden;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.18);
+  transition: transform .16s ease, box-shadow .16s ease;
+}
+
+.team:hover{
+  transform: translateY(-4px);
+  box-shadow: 0 16px 38px rgba(0,0,0,0.28);
+}
+
+/* top de la card */
+.team__top{
+  padding: 14px 14px 0 14px;
+}
+
+.team__name{
+  margin: 0 0 8px 0;
+  font-size: 1.05rem;
+  font-weight: 900;
+  color: rgba(0,0,0,0.86);
+}
+
+/* badges custom (sin depender de bootstrap colors) */
+.team__badges{
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
+.team__badges .badge{
+  border-radius: 999px;
+  padding: 6px 10px;
+  font-weight: 800;
+  font-size: 0.78rem;
+}
+
+.badge-zone{
+  background: rgba(15,15,15,0.92);
+  color: #fff;
+}
+
+.badge-mode{
+  background: rgba(155,103,5,0.14);
+  border: 1px solid rgba(155,103,5,0.35);
+  color: rgba(0,0,0,0.78);
+}
+
+.badge-soft{
+  background: rgba(0,0,0,0.06);
+  border: 1px solid rgba(0,0,0,0.10);
+  color: rgba(0,0,0,0.72);
+}
+
+.team__body{
+  padding: 12px 14px 14px 14px;
+  background: rgba(255,255,255,0.92);
+}
+
+/* tu style.css tiene .card-body fuerte; acá lo “anulamos” */
+.team__body{
+  border: none !important;
+}
+
+.team__desc{
+  margin: 0 0 10px 0;
+  color: rgba(0,0,0,0.74);
+  line-height: 1.45;
+}
+
+.team__list{
+  list-style: none;
+  padding: 0;
+  margin: 0 0 12px 0;
+  font-size: 0.92rem;
+  color: rgba(0,0,0,0.74);
+}
+
+.team__list li{
+  padding: 4px 0;
+  border-bottom: 1px dashed rgba(0,0,0,0.12);
+}
+
+.team__list li:last-child{
+  border-bottom: none;
+}
+
+.team__actions{
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
+/* CTA FINAL */
+.teams-final{
+  margin-top: 18px;
+  border-radius: 16px;
+  padding: 16px;
+  background: rgba(255,255,255,0.82);
+  border: 1px solid rgba(0,0,0,0.10);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+.teams-final h3{
+  margin: 0 0 6px 0;
+  font-weight: 900;
+}
+
+.teams-final p{
+  margin: 0;
+  color: rgba(0,0,0,0.70);
+}
+
+footer.teams-footer{
+  margin-top: 32px;
+  padding: 14px 0;
+  text-align: center;
+  font-size: 0.85rem;
+  color: rgba(255,255,255,0.75);
+}
+/* Responsive */
+@media (max-width: 992px){
+  .teams-wrap{ padding: 14px; }
+  .teams-hero{ padding: 16px; }
+  .teams-hero__cta{ align-items: flex-start; }
+}
