@@ -937,3 +937,32 @@ main .titulo {
 /**aca tengo que mover el bottom  **/
 
 /*# sourceMappingURL=style.css.map */
+.scroll-top-btn{
+  position: fixed;
+  left: 18px;
+  bottom: 18px;
+  width: 46px;
+  height: 46px;
+  border-radius: 50%;
+  border: 2px solid rgba(75, 73, 62, 0.85);
+  background: rgba(207, 197, 175, 0.92);
+  color: rgb(155, 103, 5);
+  font-size: 22px;
+  font-weight: 900;
+  display: grid;
+  place-items: center;
+  text-decoration: none;
+  box-shadow: 0 12px 28px rgba(0,0,0,0.35);
+  z-index: 999999;
+
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(10px);
+  transition: opacity .18s ease, transform .18s ease, visibility .18s ease;
+}
+
+.scroll-top-btn.show{
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
+}
