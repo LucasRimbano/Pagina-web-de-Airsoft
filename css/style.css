@@ -1075,3 +1075,15 @@ main .titulo {
 .cta-nav::after{
   animation: navSweep 4.5s ease-in-out infinite;
 }
+
+
+
+body {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+main {
+  flex: 1;
+}
