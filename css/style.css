@@ -875,7 +875,7 @@ main .titulo {
     flex-wrap: wrap;
     margin: 0px;
   }
-  .texto-tipo img {
+  .texto-tipo  > img {
     width: 400px;
     height: 200px;
   }
@@ -1099,6 +1099,8 @@ main {
   z-index: 1;
 }
 
+
+
 .popup-campo {
   min-width: 180px;
 }
@@ -1116,8 +1118,67 @@ main {
   text-decoration: none;
 }
 
+
+.icono-instagram {
+  width: 30px !important;
+  height: 30px !important;
+  max-width: 30px !important;
+  object-fit: contain;
+  display: inline-block;
+}
+.mapa-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  flex-wrap: wrap;
+  margin: 20px auto;
+}
+
+.mapa iframe,
+.mapa-iframe {
+  width: 100%;
+  max-width: 700px;
+  height: 450px;
+  display: block;
+  margin: 20px auto;
+  border: 0;
+}
+
 @media (max-width: 768px) {
-  #mapa-gba {
+    #mapa-gba {
     height: 480px;
+  }
+  .mapa iframe,
+  .mapa-iframe {
+    width: 95%;
+    height: 350px;
+  }
+}
+/* ARREGLO DEFINITIVO ICONOS INSTAGRAM EN MAPAS */
+.grilla-mapa .mapa .mapa-link img,
+.mapa-link img,
+img.icono-instagram,
+img.mapa-img {
+  width: 30px !important;
+  height: 30px !important;
+  max-width: 30px !important;
+  min-width: 30px !important;
+  object-fit: contain !important;
+  display: inline-block !important;
+  flex: 0 0 30px !important;
+}
+
+/* Evita que la regla .texto-tipo img rompa los iconos */
+@media (max-width: 950px) {
+  .texto-tipo .mapa-link img,
+  .grilla-mapa .mapa .mapa-link img,
+  .mapa-link img,
+  img.icono-instagram,
+  img.mapa-img {
+    width: 30px !important;
+    height: 30px !important;
+    max-width: 30px !important;
+    min-width: 30px !important;
   }
 }
