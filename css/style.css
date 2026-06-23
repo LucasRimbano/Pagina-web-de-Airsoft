@@ -1087,3 +1087,37 @@ body {
 main {
   flex: 1;
 }
+
+#mapa-gba {
+  width: 100%;
+  max-width: 1000px;
+  height: 650px;
+  margin: 30px auto;
+  border-radius: 18px;
+  overflow: hidden;
+  box-shadow: 0 0 25px rgba(0, 0, 0, 0.35);
+  z-index: 1;
+}
+
+.popup-campo {
+  min-width: 180px;
+}
+
+.popup-campo h3 {
+  font-size: 17px;
+  margin-bottom: 8px;
+  color: #111;
+}
+
+.popup-campo a {
+  display: inline-block;
+  color: #d62976;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+@media (max-width: 768px) {
+  #mapa-gba {
+    height: 480px;
+  }
+}

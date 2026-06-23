@@ -28,6 +28,7 @@
 <!-- Meta Tags Generated with https://metatags.io -->
     <title>Donde jugar </title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"/>
     <link rel="stylesheet" href="../css/style.css">
 </head>
 
@@ -75,10 +76,15 @@
 
 <p class="texto-tipo"> Lugares del mapa de buenos aires y alrededores donde poder jugar y conoser el deporte en donde te quede mas comodo segun donde vivas. </p>
     <article class="mapa">
-    <h2 > Mapa Gran Buenos Aires</h3>
-    <img  src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/21/Mapa_de_la_Gran_Buenos_Aires.svg/1280px-Mapa_de_la_Gran_Buenos_Aires.svg.png"
-    height="700" width="900" alt="mapa grab buenos aires ">  </div> 
-    
+      <h2>Mapa Gran Buenos Aires</h2>
+
+      <p>
+        Tocá un punto del mapa para ver el nombre del campo. Abajo tenés cada ubicación
+        con su iframe e Instagram correspondiente.
+      </p>
+
+      <div id="mapa-gba"></div>
+    </article>
     
 
 <section class="grilla-mapa" >
@@ -292,8 +298,140 @@ width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" ref
 
 
 </body>
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+<script>
+  const camposAirsoft = [
+    {
+      nombre: "La Sentencia Airsoft",
+      lat: -34.638142,
+      lng: -58.426189,
+      instagram: "https://www.instagram.com/lasentencia.airsoft/"
+    },
+    {
+      nombre: "Proyecto CQB",
+      lat: -34.669847,
+      lng: -58.398318,
+      instagram: "https://www.instagram.com/proyecto_cqb/"
+    },
+    {
+      nombre: "Juegos de Guerra",
+      lat: -34.579053,
+      lng: -58.822370,
+      instagram: "https://www.instagram.com/jdgairsoft/"
+    },
+    {
+      nombre: "Kosovo - ACDA",
+      lat: -34.762379,
+      lng: -58.499056,
+      instagram: "https://www.instagram.com/acda_ok/"
+    },
+    {
+      nombre: "Perímetro Airsoft",
+      lat: -34.671385,
+      lng: -58.309018,
+      instagram: "https://www.instagram.com/perimetroairsoft/"
+    },
+    {
+      nombre: "Krakovia Airsoft",
+      lat: -34.859154,
+      lng: -58.216787,
+      instagram: "https://www.instagram.com/krakovia.airsoft/"
+    },
+    {
+      nombre: "Contra Ataque",
+      lat: -34.230618,
+      lng: -59.038389,
+      instagram: "https://www.instagram.com/contraataque_airsoft/"
+    },
+    {
+      nombre: "Saigon Airsoft",
+      lat: -34.694630,
+      lng: -58.260479,
+      instagram: "https://www.instagram.com/saigon.airsoft/"
+    },
+    {
+      nombre: "GEU Airsoft",
+      lat: -34.501462,
+      lng: -58.998262,
+      instagram: "https://www.instagram.com/geu_airsoft/"
+    },
+    {
+      nombre: "Ardenas Airsoft",
+      lat: -34.611736,
+      lng: -59.123024,
+      instagram: "https://www.instagram.com/ardenasairsoft/"
+    },
+    {
+      nombre: "Black Ops",
+      lat: -34.957715,
+      lng: -58.004447,
+      instagram: "https://www.instagram.com/black.ops.lp/"
+    },
+    {
+      nombre: "Amphibuis Airsoft",
+      lat: -34.160843,
+      lng: -59.062209,
+      instagram: "https://www.instagram.com/contratistas.airsoft.team/"
+    },
+    {
+      nombre: "E.T.A.O Airsoft",
+      lat: -34.958242,
+      lng: -58.381104,
+      instagram: "https://www.instagram.com/campoetaoairsoft/"
+    },
+    {
+      nombre: "Verdun Airsoft",
+      lat: -34.869251,
+      lng: -58.288923,
+      instagram: "https://www.instagram.com/verdun.airsoft/"
+    }
+  ];
+
+  const mapa = L.map("mapa-gba", {
+    center: [-34.65, -58.55],
+    zoom: 9,
+    minZoom: 8,
+    maxZoom: 16
+  });
+
+  L.tileLayer("https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png", {
+    attribution: "&copy; OpenStreetMap contributors"
+  }).addTo(mapa);
+
+  const grupoMarcadores = L.featureGroup();
+
+  camposAirsoft.forEach((campo) => {
+    const marcador = L.circleMarker([campo.lat, campo.lng], {
+      radius: 8,
+      fillColor: "#d62976",
+      color: "#ffffff",
+      weight: 2,
+      opacity: 1,
+      fillOpacity: 0.9
+    });
+
+    marcador.bindPopup(`
+      <div class="popup-campo">
+        <h3>${campo.nombre}</h3>
+        <a href="${campo.instagram}" target="_blank" rel="noopener">
+          Instagram
+        </a>
+      </div>
+    `);
+
+    marcador.addTo(mapa);
+    grupoMarcadores.addLayer(marcador);
+  });
+
+  grupoMarcadores.addTo(mapa);
+
+  mapa.fitBounds(grupoMarcadores.getBounds(), {
+    padding: [40, 40]
+  });
+</script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>   
-    <script> 
+<script>
+ 
    scrollBtn = document.getElementById("scrollTopBtn");
 
   function toggleScrollBtn(){
