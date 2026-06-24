@@ -378,15 +378,17 @@ footer a:hover {
 .grilla-mapa .mapa {
   text-align: center;
   border: solid 5px #4e3919;
-  display: flexbox;
+  display: block;
   padding: 0px;
   background-color: rgba(222, 208, 182, 0.2196078431);
 }
 .grilla-mapa .mapa iframe {
-  margin-top: 35px;
-  margin-left: 5px;
-  margin-right: 5px;
-  margin-bottom: 0px;
+  display: block;
+  width: 90%;
+  max-width: 700px;
+  height: 450px;
+  margin: 35px auto 20px;
+  border: 0;
 }
 .grilla-mapa .mapa:hover {
   background-color: rgba(240, 225, 191, 0.4392156863);
@@ -420,7 +422,13 @@ footer a:hover {
   background-color: rgb(122, 89, 44);
 }
 .grilla-mapa .mapa .mapa-link {
+  display: flex;
   justify-content: center;
+  align-items: center;
+  gap: 12px;
+  flex-wrap: wrap;
+  width: 100%;
+  margin: 20px auto;
 }
 .grilla-mapa .mapa .mapa-link #linkmapa {
   margin-top: 5px;
@@ -428,7 +436,6 @@ footer a:hover {
   box-sizing: border-box;
   color: rgb(155, 103, 5);
   font-size: 19px;
-  padding: 10px 15px;
   background-color: #BBAB8C;
   text-decoration: none;
   border-top: solid 7px rgb(110, 110, 105);
@@ -1174,14 +1181,35 @@ img.mapa-img {
 
 /* Evita que la regla .texto-tipo img rompa los iconos */
 @media (max-width: 950px) {
-  .texto-tipo .mapa-link img,
+  .grilla-mapa .mapa .mapa-link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+
+    width: fit-content;
+    max-width: 100%;
+
+    margin: 20px auto;
+  }
+
+  .grilla-mapa .mapa .mapa-link #linkmapa {
+    margin: 0;
+    padding: 8px 12px;
+
+    font-size: 15px;
+    text-align: center;
+
+    max-width: 260px;
+    box-sizing: border-box;
+  }
+
   .grilla-mapa .mapa .mapa-link img,
-  .mapa-link img,
-  img.icono-instagram,
-  img.mapa-img {
+  .grilla-mapa .mapa .mapa-link .icono-instagram {
     width: 30px !important;
     height: 30px !important;
     max-width: 30px !important;
     min-width: 30px !important;
+    flex: 0 0 30px;
   }
 }
