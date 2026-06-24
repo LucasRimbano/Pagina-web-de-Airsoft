@@ -662,25 +662,7 @@ main .titulo {
   padding: 5px 15px;
 }
 
-@media (max-width: 950px) {
-  .tipos-partidas {
-    display: flex;
-    flex-wrap: row;
-    flex-wrap: wrap;
-    margin: 0px;
-  }
- 
 
- .texto-tipo img {
-    width: 90%;
-    max-width: 500px;
-    height: auto;
-    display: block;
-    margin: 20px auto;
-    object-fit: cover;
-    border-radius: 10px;
-  }
-}
 @media (max-width: 1250px) {
   .card-group {
     display: grid;
@@ -855,39 +837,7 @@ main .titulo {
     order: 8;
   }
 }
-@media (max-width: 950px) {
-  .grilla-tipoMarcadoras {
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-    align-items: center;
-    justify-content: flex-start;
-  }
-  .b1 {
-    order: 1;
-  }
-  .b5 {
-    order: 2;
-  }
-  .b2 {
-    order: 3;
-  }
-  .b6 {
-    order: 4;
-  }
-  .b3 {
-    order: 5;
-  }
-  .b7 {
-    order: 6;
-  }
-  .b4 {
-    order: 7;
-  }
-  .b8 {
-    order: 8;
-  }
-}
+
 /**MEDIA TIPO PARTIDAS 3ER HTML **/
 
 @media (max-width: 1250px) {
@@ -921,29 +871,7 @@ main .titulo {
   }
 }
 /** MEDIA CONTACTO HTML 5 **/
-@media (max-width: 950px) {
-  .grilla-contacto {
-    display: flex;
-    flex-direction: column;
-    padding-bottom: 20px;
-    gap: 3px;
-    object-fit: cover;
-  }
-  .form {
-    max-width: 90%;
-  }
-  .input {
-    max-width: 60%;
-  }
-  .textarea {
-    margin-left: 0px;
-    max-width: 90%;
-    height: 300px;
-  }
-  .c1 {
-    height: 20px;
-  }
-}
+
 /**aca tengo que mover el bottom  **/
 
 /*# sourceMappingURL=style.css.map */
@@ -1179,8 +1107,99 @@ img.mapa-img {
   flex: 0 0 30px !important;
 }
 
-/* Evita que la regla .texto-tipo img rompa los iconos */
+
+
+
 @media (max-width: 950px) {
+
+  /* TEXTOS GENERALES */
+  .texto-tipo {
+    font-size: 20px;
+    line-height: 1.4;
+    padding: 10px 12px;
+  }
+
+  .texto-tipo p {
+    font-size: 20px;
+    line-height: 1.4;
+  }
+
+  .texto-tipo #textocomoseorigino {
+    font-size: 20px;
+    line-height: 1.4;
+    padding: 10px 12px;
+  }
+
+  .texto-tipo .titulo,
+  main .titulo {
+    font-size: 32px;
+    padding: 8px 10px;
+  }
+
+  /* IMÁGENES DENTRO DE TEXTO-TIPO */
+  .texto-tipo img {
+    width: 90%;
+    max-width: 500px;
+    height: auto;
+    display: block;
+    margin: 20px auto;
+    object-fit: cover;
+    border-radius: 10px;
+  }
+
+  /* TIPOS DE PARTIDAS */
+  .tipos-partidas {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0;
+  }
+
+  /* TIPO MARCADORAS */
+  .grilla-tipoMarcadoras {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+    justify-content: flex-start;
+  }
+
+  .b1 { order: 1; }
+  .b5 { order: 2; }
+  .b2 { order: 3; }
+  .b6 { order: 4; }
+  .b3 { order: 5; }
+  .b7 { order: 6; }
+  .b4 { order: 7; }
+  .b8 { order: 8; }
+
+  /* CONTACTO */
+  .grilla-contacto {
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 20px;
+    gap: 3px;
+    object-fit: cover;
+  }
+
+  .form {
+    max-width: 90%;
+  }
+
+  .input {
+    max-width: 60%;
+  }
+
+  .textarea {
+    margin-left: 0;
+    max-width: 90%;
+    height: 300px;
+  }
+
+  .c1 {
+    height: 20px;
+  }
+
+  /* MAPAS - LINK + ICONO */
   .grilla-mapa .mapa .mapa-link {
     display: flex;
     justify-content: center;
