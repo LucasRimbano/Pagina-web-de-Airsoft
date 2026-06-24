@@ -1269,4 +1269,37 @@ img.mapa-img {
     padding: 8px 10px;
     max-width: 240px;
   }
+
+   .navbar-collapse {
+    width: 100%;
+  }
+
+  .navbar-collapse .navbarlink,
+  .navbar-collapse .linkindex {
+    width: 85%;
+    max-width: 320px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    margin: 8px auto;
+    padding: 8px 12px;
+
+    font-size: 16px;
+    text-align: center;
+    box-sizing: border-box;
+  }
+
+  .navbar-collapse .navbarlink:hover,
+  .navbar-collapse .linkindex:hover {
+    width: 85%;
+    max-width: 320px;
+
+    margin: 8px auto;
+    padding: 8px 12px;
+
+    font-size: 16px;
+    transform: scale(1.03);
+  }
 }
