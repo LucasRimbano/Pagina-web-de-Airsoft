@@ -12,44 +12,34 @@ el condicional segun a donde me quiero mover si estilo oscuro o mas claro
   font-size: 33px;
 }
 
-**/
-ol li {
-  text-align: center;
-  background-color: #cfc5af;
-  list-style-type: none;
-  padding-top: 10px;
-  padding-bottom: 10px;
-  border-top: solid 2px rgb(75, 73, 62);
-  border-bottom: solid 5px rgba(56, 56, 39, 0.8431372549);
-  border-left: solid 3px #3a3434;
-  border-right: solid 3px #413d3d;
-  border-radius: 8px;
-}
 
 footer {
   margin-top: 100px;
 }
+
 footer .footer-grid {
-  background-color: rgba(187, 166, 125, 0.8980392157);
-  padding-bottom: 2px;
+  background-color: rgba(187, 166, 125, 0.898);
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-bottom: 0px;
-  padding: 2px 0px;
+  margin-bottom: 0;
+  padding: 2px 0;
 }
 
-footer .footer-grid .footer-box {
+footer .footer-box {
   display: flex;
   flex-direction: row;
   justify-content: center;
   border: solid 7px rgba(59, 56, 50, 0);
-  padding: 12px 12px;
+  padding: 12px;
 }
-footer .footer-grid .footer-box .copyright p {
+
+footer .copyright p {
   font-size: 20px;
+  margin: 0;
 }
-footer .footer-grid .footer-box ol {
+
+footer ol {
   list-style: none;
   display: flex;
   flex-direction: row;
@@ -57,40 +47,40 @@ footer .footer-grid .footer-box ol {
   margin: 0;
   gap: 30px;
 }
-footer li{
- text-align: center;
+
+footer li {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  text-align: center;
   background-color: #cfc5af;
   list-style-type: none;
-  padding-top: 10px;
-  padding-bottom: 10px;
+  padding: 5px 10px;
   border-top: solid 2px rgb(75, 73, 62);
-  border-bottom: solid 5px rgba(56, 56, 39, 0.8431372549);
+  border-bottom: solid 5px rgba(56, 56, 39, 0.843);
   border-left: solid 3px #3a3434;
   border-right: solid 3px #413d3d;
   border-radius: 8px;
 }
-footer .footer-grid .footer-box li {
-  display: flex;
-  align-items: center;
-  gap: 10px;
-  padding: 5px 10px;
-}
 
-footer .footer-grid .footer-box .top-navigation {
+footer .top-navigation {
   background-color: #cfc5af;
   border-radius: 8px;
   font-size: 15px;
 }
-footer .footer-grid .footer-box .top-navigation:hover {
+
+footer .top-navigation:hover {
   transform: scale(1.1);
   margin-left: 20px;
   transition: 0.4s;
 }
+
 footer a {
   color: rgb(155, 103, 5);
   font-size: 18px;
   text-decoration: none;
 }
+
 footer a:hover {
   color: #fcfaf4;
   padding: 6px 3px;
@@ -101,31 +91,20 @@ footer a:hover {
 /** NAV BAR INDEX **/
 .navbarindex {
   display: flex;
-  gap: 30px;
-  background-color: rgba(207, 196, 166, 0.8274509804);
+  justify-content: center;
   align-items: center;
+  gap: 30px;
+
+  background-color: rgba(207, 196, 166, 0.827);
   border-radius: 3px;
-  padding-left: 380px;
-  padding-top: 30px;
-  padding-bottom: 25px;
+
+  padding: 30px 0 25px;
 }
-.navbarindex .navbarlinkindex {
-  background-color: #cfc5af;
-  text-decoration: none;
-  margin-left: 0px;
-  margin-right: 20px;
-  border-top: solid 3px rgb(75, 73, 62);
-  border-bottom: solid 10px #383827;
-  border-left: solid 3px #3a3434;
-  border-right: solid 3px #413d3d;
-  border-radius: 8px;
-  padding: 10px 20px 10px 20px;
-  gap: 10px;
-  color: rgb(155, 103, 5);
-}
+
+
 .navbarindex a:hover {
   font-size: 20px;
-  transform: scale(1.01);
+  transform: scale(1.0);
   transition: 0.5s;
   text-decoration: underline;
   border-top: solid 3px rgba(56, 56, 39, 0.7254901961);
@@ -135,6 +114,33 @@ footer a:hover {
   color: #080808;
 }
 
+.navbarindex .navbarlinkindex {
+  background-color: #cfc5af;
+  color: #5f3f08;
+  text-decoration: none;
+
+  border-top: solid 3px #7a6040;
+  border-bottom: solid 8px #3e3428;
+  border-left: solid 3px #3a3434;
+  border-right: solid 3px #413d3d;
+  border-radius: 8px;
+
+  padding: 10px 20px;
+  transition: 0.3s ease;
+}
+.navbarlinkindex  a:hover {
+  font-size: 20px;
+  transform: scale(1.0);
+  transition: 0.5s;
+  text-decoration: underline;
+  border-top: solid 3px rgba(56, 56, 39, 0.7254901961);
+  border-left: solid 3px rgba(56, 56, 39, 0.7254901961);
+  border-right: solid 5px rgba(56, 56, 39, 0.7254901961);
+  border-bottom: solid 8px rgba(56, 56, 39, 0.7254901961);
+  color: #080808;
+}
+
+
 /** NAV BAR FUERA DEL INDEX**/
 .navbar {
   display: flex;
@@ -143,29 +149,30 @@ footer a:hover {
   align-items: center;
   border-radius: 3px;
   padding-left: 20px;
-  padding-top: 25px;
-  padding-bottom: 25px;
-  padding-top: 30px;
+
 }
 .navbar .navbarlink {
   background-color: #cfc5af;
   text-decoration: none;
   margin-right: 200px;
+  margin-left: 10px;
+  padding-left: 10px;
   border-top: solid 3px rgb(75, 73, 62);
   border-bottom: solid 10px #383827;
   border-left: solid 3px #3a3434;
   border-right: solid 3px #413d3d;
   border-radius: 5px;
-  padding: 3px 10px;
   gap: 10px;
   display: flex;
-  padding-left: 50px;
+
 }
 .navbar .navbarlink:hover {
-  background-color: rgba(235, 217, 191, 0.4039215686);
+  background-color: rgba(199, 178, 149, 0.404);
   font-size: 25px;
   color: #252420;
   margin-top: 7px;
+  margin-left: 50px;
+  padding-left: 20px;
   font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
   transition: 0.7s;
 }
@@ -185,19 +192,16 @@ footer a:hover {
 .navbar .linkindex:hover {
   font-size: 29px;
   color: #252420;
-  padding-left: 80px;
-  padding-right: 80px;
   margin-top: 7px;
   font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
-  transition: 0.8s;
+  transition: 0.5s;
 }
 .navbar .navbar-toggler:hover {
-  font-size: 30px;
   border: solid 3px #e9d981;
   border-radius: 3%;
   transition: 0.3s;
   filter: contrast(65);
-  font-size: 33px;
+  font-size: 29px;
 }
 .navbar a {
   color: rgb(155, 103, 5);
@@ -207,45 +211,28 @@ footer a:hover {
 
 /**ACA EMPIEZA QUE ES EL AIRSOFT **/
 /** esta parte esta tambien en el html de mapa h3 texto-tipo **/
+
+
 .texto-tipo {
-  margin: 0;
-  background-color: #F1D3B3;
-  color: #0f0e0d;
-  font-family: Georgia, Times, "Times New Roman", serif;
-  font-size: 40px;
-  padding-top: 0px;
-  padding-left: 10px;
-  padding-bottom: 30px;
-  border-radius: 7px;
-  text-align: center;
-  margin-bottom: 0;
-  /** con este condicional estoy dando modo oscuro a la mayoria de los textos principales de los html **/
-  background-color: rgba(99, 81, 62, 0.7803921569);
-  color: #ffffff;
-  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
-  font-size: 38px;
-}
-.texto-tipo p:hover {
-  font-size: 45px;
-  color: #ffffff; /**lo voy a cambiar a blanco por el modo oscuro **/
-  border-radius: 3% solid;
-  transition: 0.3s;
-}
-.texto-tipo h2 {
-  background-color: #BBAB8C;
-  box-sizing: border-box;
-  color: rgb(155, 103, 5);
-  font-size: 35px;
-  padding: 10px 15px;
-  text-decoration: none;
-  margin-left: 30px;
-  margin-right: 30px;
-  border-top: solid 7px rgb(75, 73, 62);
-  border-bottom: solid 10px #383827;
-  border-left: solid 7px #3a3434;
-  border-right: solid 7px #413d3d;
+  margin: 10px;
+  padding: 12px 18px;
+
+  background-color: rgba(62, 52, 40, 0.88);
+  color: #f5ead8;
+
+  font-family: "Arial Narrow", Arial, sans-serif;
+  font-size: 30px;
+  line-height: 1.5;
+
+  border-left: 6px solid #b48a4a;
   border-radius: 8px;
-  padding: 10px 10px 10px 10px;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.25);
+}
+
+.texto-tipo p:hover {
+  background-color: rgba(176, 186, 153, 0.85);
+  color: #2f2a22;
+  transition: 0.3s;
 }
 .texto-tipo .titulo {
   margin-bottom: 25px;
@@ -259,14 +246,34 @@ footer a:hover {
   padding-bottom: 10px;
 }
 .texto-tipo #textocomoseorigino {
-  background-color: #F1D3B3;
-  font-size: 33px;
-  margin: 0px 0px;
-  padding: 5px 15px;
-  background-color: rgba(99, 81, 62, 0.7803921569);
-  color: #ffffff;
-  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
-  font-size: 38px;
+  margin: 10px;
+  padding: 12px 18px;
+
+  background-color: rgba(62, 52, 40, 0.88);
+  color: #f5ead8;
+
+  font-family: "Arial Narrow", Arial, sans-serif;
+  font-size: 30px;
+  line-height: 1.5;
+
+  border-left: 6px solid #b48a4a;
+  border-radius: 8px;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.25);
+}
+
+.texto-tipo #textocomoseorigino:hover {
+  background-color: rgba(176, 186, 153, 0.85);
+  color: #2f2a22;
+  transition: 0.3s;
+}
+
+.texto-tipo img {
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+  display: block;
+  object-fit: cover;
+  border-radius: 8px;
 }
 
 /**ACA EMPIEZA EL HTML DE CONTACTO **/
@@ -655,9 +662,16 @@ main .titulo {
     flex-wrap: wrap;
     margin: 0px;
   }
-  .texto-tipo img {
-    width: 400px;
-    height: 200px;
+ 
+
+ .texto-tipo img {
+    width: 90%;
+    max-width: 500px;
+    height: auto;
+    display: block;
+    margin: 20px auto;
+    object-fit: cover;
+    border-radius: 10px;
   }
 }
 @media (max-width: 1250px) {
@@ -868,18 +882,7 @@ main .titulo {
   }
 }
 /**MEDIA TIPO PARTIDAS 3ER HTML **/
-@media (max-width: 950px) {
-  .tipos-partidas {
-    display: flex;
-    flex-wrap: row;
-    flex-wrap: wrap;
-    margin: 0px;
-  }
-  .texto-tipo  > img {
-    width: 400px;
-    height: 200px;
-  }
-}
+
 @media (max-width: 1250px) {
   .card-group {
     display: grid;
